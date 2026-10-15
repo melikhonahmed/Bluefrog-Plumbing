@@ -1,0 +1,13 @@
+{
+  "name": "bluefrog-plumbing-west-houston",
+  "version": "1.0.0",
+  "description": "Custom marketing website for bluefrog Plumbing + Drain of West Houston",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -l 3000 .",
+    "dev": "serve -l 3000 ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

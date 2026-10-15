@@ -1,0 +1,789 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-card": "#FFFFFF",
+          "on-error-container": "#93000a",
+          "outline": "#717783",
+          "surface-variant": "#dae2fd",
+          "brand-slate": "#1E293B",
+          "primary": "#0059a4",
+          "surface-container": "#eaedff",
+          "surface-container-highest": "#dae2fd",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#001e2d",
+          "frog-green-hover": "#58A42B",
+          "on-error": "#ffffff",
+          "secondary-fixed": "#a0f96b",
+          "emergency-red": "#DC2626",
+          "outline-variant": "#c1c7d4",
+          "on-tertiary-fixed-variant": "#004c6b",
+          "inverse-on-surface": "#eef0ff",
+          "background": "#faf8ff",
+          "border-light": "#E2E8F0",
+          "inverse-surface": "#283044",
+          "surface-tint": "#005fae",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#faf8ff",
+          "on-tertiary": "#ffffff",
+          "error-container": "#ffdad6",
+          "surface-accent": "#F1F5F9",
+          "tertiary-container": "#0079a7",
+          "on-surface-variant": "#414752",
+          "surface-container-high": "#e2e7ff",
+          "secondary-fixed-dim": "#85dc52",
+          "primary-fixed": "#d4e3ff",
+          "tertiary-fixed": "#c6e7ff",
+          "secondary": "#2d6c00",
+          "on-primary-container": "#f4f6ff",
+          "primary-fixed-dim": "#a5c8ff",
+          "tertiary-fixed-dim": "#81cfff",
+          "on-background": "#131b2e",
+          "inverse-primary": "#a5c8ff",
+          "on-secondary-fixed-variant": "#205100",
+          "on-secondary-fixed": "#092100",
+          "on-primary-fixed-variant": "#004785",
+          "brand-navy-dark": "#0F172A",
+          "on-primary-fixed": "#001c3a",
+          "surface-subtle": "#F8FAFC",
+          "on-secondary-container": "#307300",
+          "tertiary": "#005f84",
+          "on-secondary": "#ffffff",
+          "surface-bright": "#faf8ff",
+          "primary-container": "#0072ce",
+          "surface-dim": "#d2d9f4",
+          "surface-container-low": "#f2f3ff",
+          "secondary-container": "#a0f96b",
+          "on-tertiary-container": "#f0f8ff",
+          "on-surface": "#131b2e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "margin-mobile": "1rem",
+          "gutter": "1.5rem",
+          "margin": "2rem",
+          "gutter-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "margin-desktop": "3rem"
+        },
+        "fontFamily": {
+          "label-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "headline-xl-mobile": ["Plus Jakarta Sans"],
+          "display-hero-mobile": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "display-hero": ["Plus Jakarta Sans"],
+          "label-badge": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "label-md": ["14px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "display-hero-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "headline-md": ["22px", {"lineHeight": "30px", "fontWeight": "600"}],
+          "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "display-hero": ["52px", {"lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+          "label-badge": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "label-lg": ["16px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700"}],
+          "headline-sm": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+        }
+      }
+    }
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-card border-b border-border-light shadow-[0_2px_8px_-2px_rgba(15,23,42,0.05),0_1px_4px_-1px_rgba(0,114,206,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="bluefrog plumbing logo.jpg" class="h-8 w-auto object-contain" src="../images/logo.png"><div class="hidden sm:flex flex-col"><span class="font-label-lg text-label-lg text-brand-navy-dark tracking-tight leading-none">bluefrog Plumbing + Drain</span><span class="font-label-badge text-label-badge text-primary font-semibold tracking-wide uppercase">West Houston Metroplex</span></div></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary font-bold rounded-full px-space-sm py-space-xs"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary font-bold rounded-full px-space-sm py-space-xs" data-path="services" href="#">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-xs" data-path="emergency-plumbing" href="#">Emergency Plumbing</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-xs" data-path="water-heaters" href="#">Water Heaters</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-xs" data-path="drain-cleaning" href="#">Drain Cleaning</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-xs" data-path="reviews" href="#">Reviews</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-xs" data-path="service-areas" href="#">Service Areas</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex flex-col text-right"><div class="flex items-center justify-end gap-1.5 text-emergency-red font-label-badge text-label-badge uppercase tracking-wider"><span class="w-2 h-2 rounded-full bg-emergency-red animate-pulse"></span>24/7 Live Emergency Line</div><a class="font-headline-sm text-headline-sm text-brand-navy-dark hover:text-primary transition-colors" href="tel:8326503706">(832) 650-3706</a><span class="font-label-badge text-label-badge text-outline leading-tight">Texas Master Plumber Lic #17531</span></div><a class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md bg-secondary text-on-secondary hover:bg-frog-green-hover rounded-full px-space-lg py-space-sm shadow-[0_4px_14px_rgba(104,188,54,0.35)] transition-all" data-path="book-online" href="#">Book Service Online</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Trust & Rapid Dispatch Strip -->
+<div class="w-full bg-brand-navy-dark text-on-primary py-3 px-4 sm:px-8 shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-2 text-label-badge font-label-badge tracking-wide">
+<div class="flex items-center flex-wrap justify-center sm:justify-start gap-x-3 gap-y-1 text-surface-variant">
+<span class="flex items-center gap-1.5 text-secondary-fixed font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+          West Houston's Trusted Local Plumber
+        </span>
+<span class="text-outline">/</span>
+<span>24/7 Rapid Response Dispatch</span>
+<span class="text-outline">/</span>
+<span class="text-on-primary font-semibold">TX Master Plumber Lic. #17531</span>
+</div>
+<div class="flex items-center justify-center gap-2 text-secondary-fixed font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Zero Trip Fee with Approved Repair</span>
+</div>
+</div>
+</div>
+<!-- Hero Section: Human Connection & Fast Dispatch Request -->
+<section class="w-full bg-surface-subtle py-10 lg:py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+<!-- Left Editorial & Credibility Column -->
+<div class="lg:col-span-7 flex flex-col justify-center space-y-6">
+<div class="inline-flex items-center gap-2 self-start bg-primary-fixed text-on-primary-fixed px-3 py-1.5 rounded-full text-label-badge font-label-badge tracking-wider uppercase">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span>
+            West Houston • Katy • Memorial • Sugar Land
+          </div>
+<h1 class="font-display-hero text-display-hero text-brand-navy-dark leading-tight">
+            Reliable West Houston Plumbing. <br>
+<span class="text-primary-container">Done Right The First Time.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Fast, spotless, and fully guaranteed plumbing and drain service across West Houston, Katy, Memorial, and Sugar Land. Upfront flat-rate pricing with zero hidden fees.
+          </p>
+<!-- Direct Hero Action Buttons -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+<a class="flex items-center justify-center gap-3 bg-brand-navy-dark text-on-primary hover:bg-brand-slate px-6 py-4 rounded-full font-label-lg text-label-lg transition-all shadow-md group" href="tel:8326503706">
+<span class="material-symbols-outlined text-secondary-fixed group-hover:rotate-12 transition-transform">phone_in_talk</span>
+<div class="text-left">
+<span class="block text-body-sm font-normal text-surface-variant text-[12px] leading-none mb-1">Call Dispatch Direct</span>
+<span class="font-bold text-headline-sm text-headline-sm leading-none">(832) 650-3706</span>
+</div>
+</a>
+<a class="flex items-center justify-center gap-2 bg-secondary text-on-secondary hover:bg-frog-green-hover px-7 py-4 rounded-full font-label-lg text-label-lg transition-all shadow-md" href="#dispatch-form">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+              Book Online Now
+            </a>
+</div>
+<!-- Real Local Crew Photography Framing -->
+<div class="relative pt-6">
+<div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-card">
+<img alt="bluefrog Plumbing + Drain team of certified master plumbers in Houston TX" class="w-full h-64 sm:h-72 object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1X-cIm0a1uLeNyQkkTOmUB_5LjxEjuxJNbhzyy0FEYDH6Z5eQuG3QqhUsw-gI79P3GreQ9zYyTchGas4lRYWTR7bI6mx4wks9rmeT4uLhmTvhK3PLriXaOU4Qyz0ypwZVgsArNOqoqQz0Afl3MMaa6sUs8V7xR5FxnFMdEAOgI2GDVFSzDq-ZgMBygTA9_s6z1WDSxaQCHH3tEOGn39Nm_Qvit-Haw6SmaUVIBy52g37LzPHiA_ViXSuUU">
+<div class="absolute bottom-4 left-4 right-4 bg-brand-navy-dark/95 backdrop-blur-sm text-on-primary p-3 rounded-xl flex items-center justify-between shadow-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[22px]">star</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg text-on-primary flex items-center gap-1">
+<span>480+ Five-Star Google Reviews</span>
+<span class="text-secondary-fixed text-[14px]">★★★★★</span>
+</div>
+<span class="text-body-sm text-body-sm text-surface-variant">Verified Houston Homeowner Satisfaction</span>
+</div>
+</div>
+<div class="hidden sm:flex flex-col text-right">
+<span class="text-label-badge font-label-badge text-secondary-fixed uppercase">Live Dispatch Status</span>
+<span class="text-body-sm font-semibold text-on-primary">Avg Response &lt; 45 Mins</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Dispatch Request Form Card -->
+<div class="lg:col-span-5 bg-surface-card rounded-2xl p-6 sm:p-8 shadow-xl" id="dispatch-form">
+<div class="mb-6">
+<div class="flex items-center gap-2 text-primary font-label-badge text-label-badge uppercase tracking-wider mb-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+              Prompt Response System
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark">Fast Dispatch Request</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Skip phone wait times. Schedule prompt service with transparent flat-rate estimates.
+            </p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('success-state').classList.remove('hidden'); this.classList.add('hidden');">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5" for="name">Full Name *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-[18px]">person</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-subtle text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="name" placeholder="e.g. Robert Henderson" required="" type="text">
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5" for="phone">Phone Number *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-[18px]">phone</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-subtle text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="phone" placeholder="(832) 000-0000" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5" for="zip">West Houston Zip *</label>
+<input class="w-full px-4 py-3 bg-surface-subtle text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="zip" placeholder="e.g. 77042" required="" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5" for="urgency">Urgency</label>
+<select class="w-full px-3 py-3 bg-surface-subtle text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="urgency">
+<option>Immediate / Emergency</option>
+<option>Today (Next 4 Hours)</option>
+<option>Tomorrow Morning</option>
+<option>Flexible Consultation</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5" for="service">Service Needed *</label>
+<select class="w-full px-4 py-3 bg-surface-subtle text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="service" required="">
+<option value="drain">Drain Cleaning &amp; Clog Removal</option>
+<option value="heater">Water Heater Repair / Replacement</option>
+<option value="leak">Hidden Leak Detection &amp; Water Line</option>
+<option value="emergency">24/7 Emergency Burst Pipe / Overflow</option>
+<option value="fixtures">Fixture, Toilet, or Faucet Repair</option>
+<option value="sewer">Hydro-Jetting / Sewer Video Inspection</option>
+<option value="repipe">Whole-Home Repiping Assessment</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5" for="notes">Problem Description (Optional)</label>
+<textarea class="w-full px-4 py-2.5 bg-surface-subtle text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="notes" placeholder="Briefly describe what is happening..." rows="2"></textarea>
+</div>
+<button class="w-full py-4 px-6 bg-secondary text-on-secondary hover:bg-frog-green-hover rounded-xl font-label-lg text-label-lg transition-colors shadow-md flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+              Request Immediate Service
+            </button>
+<div class="flex items-center justify-center gap-4 text-center font-label-badge text-label-badge text-outline pt-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span> No Spam</span>
+<span>•</span>
+<span>No Obligation Quotes</span>
+<span>•</span>
+<span>Direct Master Plumber Techs</span>
+</div>
+</form>
+<!-- Feedback Success State -->
+<div class="hidden p-6 rounded-xl bg-surface-container text-center space-y-3" id="success-state">
+<div class="w-12 h-12 bg-secondary text-on-secondary rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[28px]">check</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">Dispatch Request Received!</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our West Houston dispatcher is reviewing your request right now. You will receive a call within 10 minutes to confirm technician ETA.</p>
+<p class="font-label-md text-label-md text-primary font-bold">Need instant support? Call (832) 650-3706</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Accreditations & Guarantees Trust Ribbon -->
+<section class="w-full bg-surface-card py-8 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+<div class="flex items-center gap-3 p-3 bg-surface-subtle rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<span class="block font-label-md text-label-md text-brand-navy-dark">Google Guaranteed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">$2,000 Backed Coverage</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-subtle rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">military_tech</span>
+</div>
+<div>
+<span class="block font-label-md text-label-md text-brand-navy-dark">HomeAdvisor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Top Rated West Houston</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-subtle rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">shield_person</span>
+</div>
+<div>
+<span class="block font-label-md text-label-md text-brand-navy-dark">BBB A+ Accredited</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Highest Trust Standard</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-subtle rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">location_city</span>
+</div>
+<div>
+<span class="block font-label-md text-label-md text-brand-navy-dark">Houston West Chamber</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Active Community Member</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Plumbing Services Grid -->
+<section class="w-full bg-surface-subtle py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mb-12">
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest font-bold">Licensed Full-Service Solutions</span>
+<h2 class="font-headline-xl text-headline-xl text-brand-navy-dark mt-1">
+          Specialized Plumbing &amp; Drain Expertise
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          From high-pressure main line scouring to tankless water installations, we handle residential challenges with trade mastery and surgical cleanliness.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1: Drain & Hydro Jetting -->
+<div class="bg-surface-card rounded-2xl overflow-hidden shadow-md flex flex-col hover:-translate-y-1 transition-transform">
+<div class="h-48 overflow-hidden relative">
+<img alt="Hydro-jetting line clearing in West Houston" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WktbT7fZCihHI-c9uDDw-ghYL6mchqHi0kQe36iyhGjcbQc-DeHEKwg_86FEgEhL5bzZmZAYtLVnxmIFdd0BL3w9f5bYwknBymQact0EvMSzygnMUZRhFTXrSVV5b2o57e5ulYPLqJU9d71Cu95LWVktWVGnSIbr5Bw_YjjnnH1IK_Ny13xDPzQFtE9dHN2yPpk0wMpch7JrgZAwo5sB7TiXaCbgqI-iy9-vdPEUsxrVAWGz2FDnCb99g">
+<span class="absolute top-3 right-3 bg-brand-navy-dark/90 text-on-primary font-label-badge text-label-badge px-2.5 py-1 rounded-full uppercase">
+              Clog Annihilation
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-2">Drain &amp; Sewer Hydro-Jetting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Clear clogs and heavy buildup with zero pipe damage. Our commercial-grade water jets scour grease, tree roots, and sediment completely from residential lines.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+                Zero damage guarantee <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<a class="p-2 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-colors" href="tel:8326503706">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service 2: Water Heaters -->
+<div class="bg-surface-card rounded-2xl overflow-hidden shadow-md flex flex-col hover:-translate-y-1 transition-transform">
+<div class="h-48 overflow-hidden relative">
+<img alt="Water softener and water heater installation in Houston" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VaRVL5pXj0j--WLDKXS_rgQsg8Fml0ZAioMLkjJ4RR_2XdV3IUj8ts3ZeD_MBSDCEddq7iFt-B0Fwtn0D-NEYht0wTxV-s5UEoK3EfsHjE57O-A5UQwd6q4MDQBJFXlonjFXMe6FZOQ51CNMKIJliR1cVRb_BbfOsRgYAy8iZbCyrUarP3iFJAjLpmkCbJDCfJesAoHhXWGKjghY8xPNyc8TKtKWUwcZRj_bgc_UYbhUB56Qiv-qTP1ws">
+<span class="absolute top-3 right-3 bg-secondary text-on-secondary font-label-badge text-label-badge px-2.5 py-1 rounded-full uppercase">
+              Same-Day Repair
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-2">Water Heaters &amp; Tankless Systems</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Reliable hot water replacements, repairs, and energy-efficient tankless upgrades. We service gas and electric units with manufacturer-grade parts.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+                Tankless &amp; conventional <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<a class="p-2 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-colors" href="tel:8326503706">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service 3: Smart Fixtures & Leak Defense -->
+<div class="bg-surface-card rounded-2xl overflow-hidden shadow-md flex flex-col hover:-translate-y-1 transition-transform">
+<div class="h-48 overflow-hidden relative">
+<img alt="Smart faucet installation and precision leak detection" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XLuPsRthe1Hkk4toZ4HGJwW05bm1xpWRgTNr4po5JkNQoPI8mMrB_XM5v1IB_2Ijzr7xFwwjWcePTj03eKxfEnZBwF1nyHDj-pKl-8IpTOaU_ZZMOb_v2NVEdgLFdNKE4gGMtJAh6k-LCNM9b6pkWKIJyjtce1pELymN1jUi9XZkpkKI6x0TTfWaY6tw72K-U0HR5MYkPcZOi_iR124VQ7AzC5GzoFfX5EMwuasOKgJ8Mr_kSYperOXvg">
+<span class="absolute top-3 right-3 bg-primary text-on-primary font-label-badge text-label-badge px-2.5 py-1 rounded-full uppercase">
+              Damage Prevention
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-2">Smart Fixtures &amp; Leak Defense</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Stop hidden leaks before costly water damage occurs. Precision acoustic leak tracking, touchless fixtures, and automated shut-off valve installs.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+                Non-invasive detection <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<a class="p-2 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-colors" href="tel:8326503706">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service 4: General Plumbing Repairs & Repiping -->
+<div class="bg-surface-card rounded-2xl overflow-hidden shadow-md flex flex-col hover:-translate-y-1 transition-transform">
+<div class="h-48 overflow-hidden relative">
+<img alt="Plumbing repairs and repiping in West Houston area" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Ut9Oh7mk3v3cZmWpZaFw2Tyu6l-XbzcjSII7Blj013wI2ktEBfIDnHBh-KEqcN907uF572lqXk6Fe9Nx0YCXG7pXu859JJqPCEVyp7FtXF1ux-4hguT4DEkVnao8U0LKSlGrOlenCFzkuMjXuHt_X5f6o3xSeVSGPToQOYt_-INCnqLy_2rwYATawxb74rb8nNCiTRF1AAfNstCYeKvM4Wh2tK4ov7Y-64MFjvUvct1pXqvADR8_OnvQ">
+<span class="absolute top-3 right-3 bg-brand-navy-dark/90 text-on-primary font-label-badge text-label-badge px-2.5 py-1 rounded-full uppercase">
+              Full Spectrum
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-2">Plumbing Repairs &amp; Repiping</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                From leaky faucets, running toilets, and failing valves to whole-home PEX and copper repiping. Solid trade craftsmanship built to endure.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+                Whole-home repipe <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<a class="p-2 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-colors" href="tel:8326503706">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service 5: 24/7 Emergency Plumbing -->
+<div class="bg-surface-card rounded-2xl overflow-hidden shadow-md flex flex-col hover:-translate-y-1 transition-transform">
+<div class="h-48 bg-primary-container p-6 flex flex-col justify-between text-on-primary relative">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[36px]">emergency</span>
+<span class="bg-emergency-red text-on-error font-label-badge text-label-badge px-2.5 py-1 rounded-full uppercase animate-pulse">
+                Live 24/7 Crew
+              </span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-surface-variant">Rapid Dispatch</span>
+<h4 class="font-headline-sm text-headline-sm text-on-primary mt-0.5">Under 45 Minute Arrival</h4>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-2">24/7 Emergency Plumbing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Burst pipes, major sewage backups, flood risks, and critical gas line repairs. Real Houston dispatchers answer instantly—no outsourced answering machines.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<a class="font-label-md text-label-md text-emergency-red font-bold flex items-center gap-1" href="tel:8326503706">
+                Call Emergency Desk <span class="material-symbols-outlined text-[16px]">call</span>
+</a>
+<span class="text-body-sm font-semibold text-brand-navy-dark">(832) 650-3706</span>
+</div>
+</div>
+</div>
+<!-- Service 6: Camera Sewer Inspections -->
+<div class="bg-surface-card rounded-2xl overflow-hidden shadow-md flex flex-col hover:-translate-y-1 transition-transform">
+<div class="h-48 bg-brand-navy-dark p-6 flex flex-col justify-between text-on-primary relative">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[36px] text-tertiary-fixed">videocam</span>
+<span class="bg-surface-variant/20 text-surface-variant font-label-badge text-label-badge px-2.5 py-1 rounded-full uppercase">
+                Zero Guesswork
+              </span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-tertiary-fixed">Diagnostic Precision</span>
+<h4 class="font-headline-sm text-headline-sm text-on-primary mt-0.5">High-Definition Optics</h4>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-2">Sewer &amp; Water Line Inspections</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                High-definition camera inspections to pinpoint cracks, root intrusions, and sags without digging up your yard. Full video replay provided to homeowners.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+                Schedule camera scan <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<a class="p-2 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-colors" href="tel:8326503706">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why West Houston Trusts bluefrog ("The Less Mess, Less Stress Guarantee") -->
+<section class="w-full bg-surface py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Visual Side -->
+<div class="lg:col-span-5 relative">
+<div class="bg-surface-card rounded-2xl p-4 shadow-xl">
+<img alt="bluefrog plumbing technician service van West Houston" class="w-full h-auto rounded-xl object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1WVjoRQ2NytycoaRfwV2vJTg_-Oj2oqkyoTUJlAF4_k5mXLydSzAcQBtBz4KXk-Pq0OnMwZgAhcwWcWj0lyzxgTs8Hf9lWaK40UEOODk3YfYhLfN9qYTYytBDP8tJSdip0c9UIJ6Ai3wWx2xb6IhmlnhIjmzPtr-74-pDgClrT5QAso_YEpAOdAhYNshxRR_uxGJ_FIG9_2pm-ex0VIEpNLrVRC2SsjkTY7vuPFLWcKqbNF_QdBgseSGg">
+<div class="mt-4 p-4 bg-surface-subtle rounded-xl flex items-center justify-between">
+<div>
+<span class="block font-headline-sm text-headline-sm text-brand-navy-dark">The Bluefrog Fleet</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fully stocked mobile warehouses ready on dispatch</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">
+                ✓
+              </div>
+</div>
+</div>
+</div>
+<!-- Right Content: The Practical Trade Guarantees -->
+<div class="lg:col-span-7 space-y-6">
+<div>
+<span class="font-label-badge text-label-badge text-secondary font-bold uppercase tracking-widest">Our Service Pledge</span>
+<h2 class="font-headline-xl text-headline-xl text-brand-navy-dark mt-1">
+              "Less Mess. Less Stress." <br>
+              Why West Houston Calls bluefrog First
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3">
+              We know calling a plumber usually happens on a stressful day. That is why our team treats your home with meticulous care and transparency.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+<div class="p-5 rounded-xl bg-surface-card shadow-sm space-y-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">Upfront Flat-Rate Pricing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                You review and approve the exact final price before our tools touch a single pipe. No surprise line items, no ticking hourly meters.
+              </p>
+</div>
+<div class="p-5 rounded-xl bg-surface-card shadow-sm space-y-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">Master Plumber Certified</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Every technician is background-checked, drug-tested, and a full-time in-house employee. We never dispatch third-party subcontractors.
+              </p>
+</div>
+<div class="p-5 rounded-xl bg-surface-card shadow-sm space-y-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">cleaning_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">Surgical Cleanliness</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Protective shoe booties, drop cloths, and heavy floor runners on every job. We leave your bathroom, kitchen, or utility closet cleaner than we found it.
+              </p>
+</div>
+<div class="p-5 rounded-xl bg-surface-card shadow-sm space-y-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">24/7 Live Houston Support</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Day, night, weekend, or holiday—a live human dispatcher who knows Houston answers your call and coordinates prompt truck arrival.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Proactive Home Protection: bfpad Program -->
+<section class="w-full bg-surface-subtle py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-gradient-to-r from-brand-navy-dark to-brand-slate text-on-primary rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8 space-y-4">
+<span class="inline-block bg-secondary text-on-secondary px-3 py-1 rounded-full text-label-badge font-label-badge uppercase tracking-wider">
+              Exclusive Homeowner Membership
+            </span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary">
+              bfpad Proactive Protection Program™
+            </h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl">
+              Prevent catastrophic water damage before it happens. Houston homeowners trust our ongoing maintenance club for year-round plumbing integrity.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-[14px]">✓</div>
+<span class="font-label-lg text-label-lg text-on-primary">Priority Service Dispatch</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-[14px]">✓</div>
+<span class="font-label-lg text-label-lg text-on-primary">Annual 50-Point Check</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-[14px]">✓</div>
+<span class="font-label-lg text-label-lg text-on-primary">15% Off All Repairs</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-center lg:items-end justify-center">
+<div class="bg-surface-card text-brand-navy-dark p-6 rounded-2xl shadow-lg w-full max-w-xs text-center space-y-3">
+<span class="text-label-badge font-label-badge text-outline uppercase">Membership Investment</span>
+<div class="flex items-baseline justify-center gap-1">
+<span class="font-display-hero text-display-hero text-brand-navy-dark leading-none">$14.95</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/month</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pays for itself on the first repair call.</p>
+<a class="w-full inline-block py-3 px-4 bg-secondary text-on-secondary hover:bg-frog-green-hover rounded-xl font-label-md text-label-md text-center transition-colors" href="tel:8326503706">
+                Enroll Today
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Real Local Reviews (Verified West Houston Neighbors) -->
+<section class="w-full bg-surface py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<span class="font-label-badge text-label-badge text-primary uppercase font-bold tracking-widest">Houston Neighbor Proof</span>
+<h2 class="font-headline-xl text-headline-xl text-brand-navy-dark mt-1">
+          What Your Neighbors Are Saying
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Real feedback from verified homeowners throughout Katy, Memorial, Sugar Land, and Spring Branch.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Review 1: Annie Q. -->
+<div class="bg-surface-card p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center text-secondary-fixed text-[16px]">
+              ★★★★★
+            </div>
+<p class="font-body-md text-body-md text-brand-navy-dark italic">
+              "Bluefrog was quick to call and scheduled an appointment within the hour. Replaced the sprinkler leak quickly and efficiently. I will definitely call them again."
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">Annie Q.</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Memorial City, TX</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+</div>
+<!-- Review 2: Tom V. -->
+<div class="bg-surface-card p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center text-secondary-fixed text-[16px]">
+              ★★★★★
+            </div>
+<p class="font-body-md text-body-md text-brand-navy-dark italic">
+              "Technician showed up on time and quickly identified our problem. Gave us a great quote and had our blockage fixed in no time. Highly recommended!"
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">Tom V.</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Katy &amp; Cinco Ranch</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+</div>
+<!-- Review 3: Vance G. -->
+<div class="bg-surface-card p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center text-secondary-fixed text-[16px]">
+              ★★★★★
+            </div>
+<p class="font-body-md text-body-md text-brand-navy-dark italic">
+              "Diagnosed our failing water heater without overselling. Spotless work area, polite crew, and thoroughly remedied the issue without hassle."
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">Vance G.</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sugar Land, TX</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+</div>
+<!-- Review 4: Samantha K. -->
+<div class="bg-surface-card p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center text-secondary-fixed text-[16px]">
+              ★★★★★
+            </div>
+<p class="font-body-md text-body-md text-brand-navy-dark italic">
+              "Thank you Brent and Andrew for coming over so quickly and helping me with my plumbing issues! You saved my 4th of July party! Always a pleasure."
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark">Samantha K.</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Spring Branch West, TX</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- West Houston Service Areas & Hub Map -->
+<section class="w-full bg-surface-subtle py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-6 space-y-6">
+<div>
+<span class="font-label-badge text-label-badge text-primary uppercase font-bold tracking-widest">Neighborhood Dispatch Coverage</span>
+<h2 class="font-headline-xl text-headline-xl text-brand-navy-dark mt-1">
+              Plumbers In Your Houston Neighborhood
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Our service vans operate from our Richmond Ave hub, meaning reduced travel times and swift response across the entire West Houston corridor.
+            </p>
+</div>
+<!-- Neighborhood Badge Cloud -->
+<div class="flex flex-wrap gap-2.5">
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>West Houston</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Memorial City</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Katy, TX</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Spring Branch West</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Sugar Land</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Greater Heights</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Rice Village</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>River Oaks</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>West University Place</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Pearland</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Bellaire</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Clear Lake</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Friendswood</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>League City</span>
+<span class="bg-surface-card px-3.5 py-2 rounded-xl text-label-md font-label-md text-brand-navy-dark shadow-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Missouri City</span>
+</div>
+<div class="p-4 bg-surface-card rounded-xl shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">storefront</span>
+<div>
+<span class="block font-label-md text-label-md text-brand-navy-dark">Physical Operational Hub:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                10645 Richmond Ave., Ste. 140, Houston, TX 77042
+              </p>
+<span class="inline-block text-label-badge font-label-badge text-primary mt-1 font-bold">Licensed Texas Master Plumber #17531</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Hub Location Preview -->
+<div class="lg:col-span-6 flex flex-col justify-center">
+<div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-card">
+<div class="w-full h-80 bg-cover bg-center" data-location="10645 Richmond Ave, Houston, TX 77042" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHmvScSjzQ-JQOjcOhX7N1JZoAR9hCM0agHd7KqOQIecXrPYqs4bbWHiu8d_NFaXEEEkRqY2Vhxxkbf9K3pT6ae7pt6f_p9h_NbQjDQ03r0xMPNMkJdAl5AumUbs9IQKJvxpoyLdqZ1j-EdCEIAKSZcVXo-DDzUJ35axBoGYJRhlNt91Od-WXmldqWrvqIb3U0fYaMQ8pqyj--DUVQjvhABgLTl0htZFxSWjHOjl-KRQ7IPX-6h4nc')"></div>
+<div class="p-4 bg-surface-card flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-brand-navy-dark">West Houston Service Command</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Richmond Ave Corridor Hub</span>
+</div>
+<a class="px-4 py-2 bg-brand-navy-dark text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1.5" href="tel:8326503706">
+<span class="material-symbols-outlined text-[16px]">directions</span>
+                Call Dispatch
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Final Call to Action Banner -->
+<section class="w-full bg-brand-navy-dark text-on-primary py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+<div class="inline-flex items-center gap-2 bg-secondary text-on-secondary px-4 py-1.5 rounded-full text-label-badge font-label-badge tracking-wider uppercase">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+        Ready to Leap Into Action
+      </div>
+<h2 class="font-headline-xl text-headline-xl text-on-primary max-w-2xl mx-auto">
+        Have a Plumbing Emergency or Need a Quote Today?
+      </h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-xl mx-auto">
+        Our friendly, licensed plumbers are ready to help. Zero hidden charges, spotless cleanups, and upfront flat-rate pricing.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-secondary text-on-secondary hover:bg-frog-green-hover px-8 py-4 rounded-full font-label-lg text-label-lg transition-all shadow-lg" href="tel:8326503706">
+<span class="material-symbols-outlined text-[22px]">phone_in_talk</span>
+          Call (832) 650-3706
+        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-card text-brand-navy-dark hover:bg-surface-subtle px-8 py-4 rounded-full font-label-lg text-label-lg transition-all shadow-md" href="#dispatch-form">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+          Book Online Now
+        </a>
+</div>
+<div class="pt-4 text-surface-variant font-label-badge text-label-badge">
+        Licensed Texas Master Plumber Lic. #17531 • Insured &amp; Bonded • West Houston Metroplex
+      </div>
+</div>
+</section>
+</div></main><footer class="w-full bg-brand-navy-dark text-surface-variant"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg mb-space-xl"><div class="lg:col-span-2 space-y-space-md pr-space-md"><div class="flex items-center gap-space-sm"><div class="bg-surface-card p-1.5 rounded-lg inline-flex"><img alt="bluefrog plumbing logo.jpg" class="h-8 w-auto object-contain" src="../images/logo.png"></div><span class="font-headline-sm text-headline-sm text-on-primary">bluefrog Plumbing + Drain</span></div><p class="font-body-sm text-body-sm text-outline-variant max-w-sm">Premier residential and commercial plumbing specialists serving West Houston with relentless punctuality, zero-panic solutions, and upfront transparent pricing.</p><div class="space-y-1.5 pt-space-xs"><div class="flex items-center gap-2 font-label-md text-label-md text-on-primary"><span class="material-symbols-outlined text-secondary-fixed text-[18px]">call</span><a class="hover:text-secondary-fixed transition-colors" href="tel:8326503706">(832) 650-3706</a></div><div class="flex items-start gap-2 font-body-sm text-body-sm text-outline-variant"><span class="material-symbols-outlined text-primary-fixed text-[18px] mt-0.5">location_on</span><span>10645 Richmond Ave., Ste. 140, Houston, TX 77042</span></div><div class="flex items-center gap-2 font-label-badge text-label-badge text-tertiary-fixed"><span class="material-symbols-outlined text-[16px]">verified</span>Texas Master Plumber Lic #17531</div></div></div><div><h4 class="font-label-lg text-label-lg text-on-primary mb-space-md border-b border-brand-slate pb-space-xs">Services</h4><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Emergency Plumbing</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Water Heater Repair &amp; Install</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Drain Cleaning &amp; Hydro Jetting</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Sewer Line Replacement</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Leak Detection &amp; Repair</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Gas Line Inspections</li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-primary mb-space-md border-b border-brand-slate pb-space-xs">Service Areas</h4><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Memorial City</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Katy, TX</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Sugar Land</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Spring Branch</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Houston Heights</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Pearland &amp; Bellaire</li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-primary mb-space-md border-b border-brand-slate pb-space-xs">Accreditations</h4><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Licensed Master Plumbers</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">100% Satisfaction Guarantee</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">BBB Accredited A+ Business</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Zero Trip Charge with Repair</li><li class="text-outline-variant hover:text-on-primary transition-colors cursor-pointer">Privacy Policy &amp; Terms</li></ul></div></div><div class="border-t border-brand-slate pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-outline-variant"><p>© 2025 bluefrog Plumbing + Drain of West Houston. All Rights Reserved. Regulated by Texas State Board of Plumbing Examiners.</p><div class="flex items-center gap-space-md"><span class="text-tertiary-fixed">Fully Insured &amp; Bonded</span><span class="text-outline">•</span><span class="text-tertiary-fixed">24/7 Rapid Response</span></div></div></div><div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-card border-t border-border-light p-space-sm flex items-center gap-space-sm shadow-[0_-4px_12px_rgba(0,0,0,0.08)]"><a class="flex-1 flex items-center justify-center gap-2 py-3 bg-brand-navy-dark text-on-primary rounded-full font-label-md text-label-md" href="tel:8326503706"><span class="material-symbols-outlined text-[18px]">call</span>(832) 650-3706</a><a class="flex-1 flex items-center justify-center gap-2 py-3 bg-secondary text-on-secondary rounded-full font-label-md text-label-md" data-path="book-online" href="#"><span class="material-symbols-outlined text-[18px]">calendar_today</span>Book Online</a></div></footer></body></html>

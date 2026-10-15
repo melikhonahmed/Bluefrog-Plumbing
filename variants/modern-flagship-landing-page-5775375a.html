@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","on-primary":"#ffffff","border-light":"#E2E8F0","on-primary-container":"#f4f6ff","surface-container-lowest":"#ffffff","inverse-surface":"#283044","brand-navy-dark":"#0F172A","primary-container":"#0072ce","on-tertiary-fixed":"#001e2d","outline-variant":"#c1c7d4","surface-container-highest":"#dae2fd","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#205100","surface-card":"#FFFFFF","surface-container-low":"#f2f3ff","brand-slate":"#1E293B","on-surface":"#131b2e","inverse-primary":"#a5c8ff","secondary":"#2d6c00","error":"#ba1a1a","surface-variant":"#dae2fd","on-secondary":"#ffffff","surface-dim":"#d2d9f4","background":"#faf8ff","secondary-fixed-dim":"#85dc52","inverse-on-surface":"#eef0ff","surface-tint":"#005fae","secondary-fixed":"#a0f96b","primary":"#0059a4","outline":"#717783","surface-bright":"#faf8ff","on-error":"#ffffff","on-tertiary-container":"#f0f8ff","on-tertiary-fixed-variant":"#004c6b","primary-fixed":"#d4e3ff","tertiary":"#005f84","on-secondary-container":"#307300","surface-container":"#eaedff","on-primary-fixed":"#001c3a","tertiary-fixed":"#c6e7ff","tertiary-container":"#0079a7","on-background":"#131b2e","on-surface-variant":"#414752","surface-accent":"#F1F5F9","emergency-red":"#DC2626","surface-container-high":"#e2e7ff","tertiary-fixed-dim":"#81cfff","surface":"#faf8ff","on-error-container":"#93000a","on-primary-fixed-variant":"#004785","secondary-container":"#a0f96b","frog-green-hover":"#58A42B","primary-fixed-dim":"#a5c8ff","on-secondary-fixed":"#092100","surface-subtle":"#F8FAFC"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"3rem","margin-mobile":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","gutter":"1.5rem","space-md":"1rem","space-sm":"0.5rem","margin":"2rem","space-xl":"2.5rem","space-xs":"0.25rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-badge":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-lg":["16px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-badge":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero":["52px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"label-md":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"><div class="w-full bg-brand-navy-dark text-on-primary py-space-xs px-margin-mobile lg:px-margin-desktop"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-body-sm font-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-fixed"></span></span><span class="font-label-badge text-label-badge tracking-wider text-surface-container-highest">24/7 DISPATCH LIVE IN WEST HOUSTON</span><span class="hidden md:inline text-outline-variant font-label-badge">|</span><span class="hidden md:inline text-surface-container-highest font-label-badge text-label-badge">LICENSE MPL #17531</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-amber-300"><span class="material-symbols-outlined text-[16px]">star</span><span class="font-label-md text-label-md text-on-primary">5.0 Rated</span><span class="text-outline-variant text-body-sm">(480+ Reviews)</span></div><a class="hidden sm:flex items-center gap-space-xs font-label-md text-label-md text-secondary-fixed hover:text-white transition-colors" href="tel:8326503706"><span class="material-symbols-outlined text-[16px]">support_agent</span>Direct Line</a></div></div></div><div class="bg-surface-card/90 backdrop-blur-xl shadow-[0_2px_8px_-2px_rgba(15,23,42,0.05),0_1px_4px_-1px_rgba(0,114,206,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="bluefrog plumbing logo.jpg" class="h-8 w-auto object-contain" src="../images/logo.png"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-brand-navy-dark tracking-tight leading-none">bluefrog</span><span class="font-label-badge text-label-badge tracking-wider text-primary uppercase">Plumbing + Drain</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-subtle p-space-xs rounded-full shadow-[0_1px_4px_rgba(15,23,42,0.04)]" data-active-classes="bg-primary-container text-on-primary-container font-label-md rounded-full shadow-sm"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-label-md rounded-full shadow-sm" data-path="solutions" href="#">Solutions</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-accent transition-all rounded-full" data-path="the-bluefrog-standard" href="#">The bluefrog Standard</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-accent transition-all rounded-full" data-path="vip-club" href="#">VIP Club</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-accent transition-all rounded-full" data-path="testimonials" href="#">Testimonials</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-accent transition-all rounded-full" data-path="service-areas" href="#">Service Areas</a></nav><div class="flex items-center gap-space-sm shrink-0"><a class="hidden md:inline-flex items-center gap-space-xs bg-surface-accent hover:bg-surface-container-high text-brand-navy-dark hover:text-primary px-space-md py-space-xs rounded-full font-label-md text-label-md transition-colors" href="tel:8326503706"><span class="material-symbols-outlined text-primary text-[18px]">call</span><span>(832) 650-3706</span></a><a class="inline-flex items-center justify-center bg-secondary hover:bg-frog-green-hover text-on-primary px-space-lg py-space-sm rounded-full font-label-lg text-label-lg shadow-[0_4px_14px_rgba(104,188,54,0.35)] transition-all hover:-translate-y-0.5 active:translate-y-0" data-path="schedule-service" href="#"><span>Schedule Service</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- LUXURY EDITORIAL HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface py-space-xl lg:py-24">
+<!-- Ambient glow backdrops -->
+<div class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[1000px] h-[520px] bg-gradient-to-b from-primary-fixed/40 via-surface-container-high/20 to-transparent blur-3xl -z-10"></div>
+<div class="pointer-events-none absolute top-1/3 -right-40 w-96 h-96 bg-secondary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<!-- Overline Meta Strip -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-lg">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-badge text-label-badge uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Texas Master Plumber MPL #17531
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-secondary font-label-badge text-label-badge uppercase tracking-wider">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+          45-Min Average Response
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-card text-on-surface-variant font-label-badge text-label-badge uppercase tracking-wider shadow-sm">
+          Zero Trip Fee with Repair
+        </span>
+</div>
+<!-- Hero Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Editorial Left Column -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-space-md">
+<div class="inline-block">
+<span class="text-primary font-label-badge text-label-badge uppercase tracking-[0.25em] block mb-2 font-bold">West Houston’s Premier Engineering Authority</span>
+<h1 class="font-display-hero text-display-hero text-brand-navy-dark tracking-tight leading-[1.08]">
+              Precision Plumbing.<br/>
+              Flawless Engineering.<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Absolute Peace of Mind.</span>
+</h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            West Houston’s premier residential and commercial plumbing authority. From urgent slab leak forensics to hospital-grade hydro jetting, our master technicians deliver surgical cleanliness and guaranteed upfront flat rates.
+          </p>
+<!-- Dual Call-to-Actions -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-secondary hover:bg-frog-green-hover text-on-primary font-label-lg text-label-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 group" href="#booking-portal">
+<span>Request Priority Service</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-brand-navy-dark hover:bg-brand-slate text-on-primary font-label-lg text-label-lg shadow-md transition-all duration-300" href="tel:8326503706">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emergency-red opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emergency-red"></span>
+</span>
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>(832) 650-3706</span>
+</a>
+</div>
+<!-- Micro Trust Stats -->
+<div class="pt-space-md grid grid-cols-3 gap-6 w-full max-w-lg">
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-brand-navy-dark leading-none">5.0</span>
+<div class="flex items-center gap-0.5 text-amber-400 mt-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">480+ Verified Ratings</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-brand-navy-dark leading-none">24/7</span>
+<span class="font-label-md text-label-md text-primary mt-1">Emergency Team</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live Dispatch Station</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-brand-navy-dark leading-none">100%</span>
+<span class="font-label-md text-label-md text-secondary mt-1">Guaranteed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Upfront Flat Pricing</span>
+</div>
+</div>
+</div>
+<!-- Visual Hero Mosaic Container -->
+<div class="lg:col-span-5 relative">
+<!-- Glass Morphic Main Frame -->
+<div class="relative rounded-3xl overflow-hidden shadow-2xl bg-surface-card p-2.5">
+<div class="relative w-full h-[460px] rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional bluefrog plumbing team standing confidently in front of branded white service vans under warm Houston sunlight, wearing navy and slate uniforms with genuine smiles, architectural clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaXoSbq1SIRGkccEihQS0P8IKTvJqB35YXr2fe7AEnZcu2887H3WcITbKPb2hIrLGlQq2COqy6ZPQG2ULgR6vM6ozp-BrDzfGIK67tYifjWDcD0YVI__BXYOcDEtkmgNgzhHCuB0-hhUfs6pqG_LBNPvmGOgR-DQv61F_hZaZ_-Imce4Wpk-goBkS-ApAlbh6Lo1SO0KNG1qBjyAOhUQwhnkXogOgJR6HgMsQMpopwikvyX3sGPVbX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/70 via-transparent to-transparent"></div>
+<!-- Floating Bottom Label -->
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface-card/90 backdrop-blur-md shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-brand-navy-dark">Licensed Master Fleet</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Serving West Houston &amp; Energy Corridor</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+</div>
+</div>
+<!-- Floating Metric Chip 1 -->
+<div class="hidden sm:flex absolute -top-5 -left-6 bg-surface-card/95 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-xl items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<p class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant">Google Reviews</p>
+<p class="font-headline-sm text-headline-sm text-brand-navy-dark leading-none">5.0 Star Rated</p>
+</div>
+</div>
+<!-- Floating Metric Chip 2 -->
+<div class="hidden sm:flex absolute -bottom-6 -right-6 bg-brand-navy-dark text-on-primary px-5 py-3.5 rounded-2xl shadow-2xl items-center gap-3">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary-fixed"></span>
+</span>
+<div>
+<p class="font-label-badge text-label-badge tracking-wider text-secondary-fixed">LIVE STATUS</p>
+<p class="font-label-md text-label-md text-on-primary">100% In-House Technicians</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RECOGNITION MARQUEE SECTION -->
+<section class="w-full bg-surface-container-low py-8">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<p class="font-label-badge text-label-badge uppercase text-center text-outline tracking-[0.2em] mb-6">
+        Verified &amp; Accredited by Texas' Most Stringent Consumer Protection Standards
+      </p>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity">
+<!-- Trust Item 1 -->
+<div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-card shadow-sm w-full justify-center">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">security</span>
+<div class="text-left">
+<div class="font-label-badge text-label-badge text-brand-navy-dark">GOOGLE GUARANTEED</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">$2,000 Protection</div>
+</div>
+</div>
+<!-- Trust Item 2 -->
+<div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-card shadow-sm w-full justify-center">
+<span class="material-symbols-outlined text-amber-500 text-[22px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<div class="text-left">
+<div class="font-label-badge text-label-badge text-brand-navy-dark">HOMEADVISOR</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">Top Rated 2024</div>
+</div>
+</div>
+<!-- Trust Item 3 -->
+<div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-card shadow-sm w-full justify-center">
+<span class="material-symbols-outlined text-primary text-[22px]">verified_user</span>
+<div class="text-left">
+<div class="font-label-badge text-label-badge text-brand-navy-dark">BBB ACCREDITED</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">A+ Perfect Grade</div>
+</div>
+</div>
+<!-- Trust Item 4 -->
+<div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-card shadow-sm w-full justify-center">
+<span class="material-symbols-outlined text-secondary text-[22px]">apartment</span>
+<div class="text-left">
+<div class="font-label-badge text-label-badge text-brand-navy-dark">HOUSTON WEST</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">Chamber of Commerce</div>
+</div>
+</div>
+<!-- Trust Item 5 -->
+<div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-card shadow-sm w-full justify-center col-span-2 md:col-span-1">
+<span class="material-symbols-outlined text-amber-500 text-[22px]">award_star</span>
+<div class="text-left">
+<div class="font-label-badge text-label-badge text-brand-navy-dark">ANGIE'S LIST</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">Super Service Award</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ARCHITECTURAL BENTO GRID OF CORE SOLUTIONS -->
+<section class="w-full bg-surface py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-4">
+<div>
+<span class="font-label-badge text-label-badge tracking-[0.2em] uppercase text-primary font-bold block mb-2">High-Precision Solutions</span>
+<h2 class="font-headline-xl text-headline-xl text-brand-navy-dark">Architectural Plumbing &amp; Infrastructure</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Industrial-grade technology paired with master-certified residential craftsmanship. Every repair executed to the highest code specifications.
+        </p>
+</div>
+<!-- Bento Grid Container -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Bento Card 1: Hydro-Jetting (Large Featured) -->
+<div class="lg:col-span-2 bg-surface-card rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+<div class="space-y-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-badge text-label-badge uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">speed</span> 4,000 PSI Hospital Grade
+              </span>
+<h3 class="font-headline-lg text-headline-lg text-brand-navy-dark">Drain &amp; Sewer Hydro-Jetting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Complete eradication of deep tree roots, grease scale, and mineral calcification. Paired with fiber-optic color video line diagnostics for transparent verification.
+              </p>
+<ul class="space-y-2 pt-2">
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-brand-navy-dark">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  High-definition camera recording included
+                </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-brand-navy-dark">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Zero trench excavation alternatives available
+                </li>
+</ul>
+<div class="pt-4">
+<a class="inline-flex items-center gap-1 text-primary font-label-md text-label-md group-hover:gap-2 transition-all" href="#booking-portal">
+                  Schedule Diagnostic Jetting <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="relative h-64 md:h-72 rounded-2xl overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up view of high pressure hydro jetting hose operating into a clean residential sewer access pipe in a paved driveway setting, specialized professional plumbing equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhzgl5F1FIuz4AaI0Ui52drDukwNG0zG47Br6z_WiBJHkh5WEBAVNU7hCcSDZx5XJH1NsbzlRSXQbMAsJXa4AdgYuNHG7bp2eq6UXCb_t_BYNznWp_GcQC7dCorZuR85EdkXjuaDY3FePxkc-Sh8h7wIwhl0RB5IV_hyfstjjkzTyLrftTI6WNZ66K4RWY5Z47sKM_PzuoJyS5vtTZCyUzyzCs09dgh7M3hXwS7iD9keEIPlNVeUVM"/>
+<div class="absolute top-3 right-3 bg-brand-navy-dark/80 backdrop-blur-md px-3 py-1 rounded-full text-on-primary font-label-badge text-label-badge">
+                Rooter + Scour Tech
+              </div>
+</div>
+</div>
+</div>
+<!-- Bento Card 2: 24/7 Emergency Dispatch (Midnight Obsidian Card) -->
+<div class="bg-brand-navy-dark text-on-primary rounded-3xl p-8 shadow-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 bg-emergency-red/20 rounded-full blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emergency-red/20 text-emergency-red font-label-badge text-label-badge uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-emergency-red animate-ping"></span> Live 24/7 Dispatch
+              </span>
+<span class="material-symbols-outlined text-surface-container-highest text-[28px]">crisis_alert</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-primary mb-3">Emergency Response Unit</h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest leading-relaxed mb-6">
+              Rapid response across I-10, Beltway 8, and Westpark Tollway. Burst pipes, raw sewage backup, gas leaks, and midnight slab flooding.
+            </p>
+</div>
+<div class="space-y-3">
+<div class="bg-brand-slate p-4 rounded-2xl flex items-center justify-between">
+<div>
+<p class="font-label-badge text-label-badge text-surface-container-highest uppercase">Direct Dispatch Desk</p>
+<p class="font-headline-sm text-headline-sm text-secondary-fixed">(832) 650-3706</p>
+</div>
+<a class="w-10 h-10 rounded-full bg-secondary text-on-primary flex items-center justify-center hover:bg-frog-green-hover transition-colors" href="tel:8326503706">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+</a>
+</div>
+<p class="font-label-badge text-label-badge text-outline-variant text-center">Average Arrival Under 45 Minutes</p>
+</div>
+</div>
+<!-- Bento Card 3: Plumbing Repairs & Fixtures -->
+<div class="bg-surface-card rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative h-44 rounded-2xl overflow-hidden mb-5">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Skilled master plumber hands holding and fitting precision copper tee pipe and fittings with clean bluefrog work uniform background, tactile mechanical detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmtiCEH2u3Upyk9Bjh1lF6GEqOicLUXGY5y3fPsg74tsl1hi3fbHY6sNIFniJqZPq6rYB_4IUDvrNmnVNzOomTQ5VX52IcBlp36ymqA4hSWGcAUkuX0dDmbYSC-nOR4mbMsLwNSFV3HGLb2Hxc8dVRYVY38WaCbQNwW_uVY_vVUaP2N_1LrMPn0MJosBRsXXmIQE0kKgFj9NKmX0fEHdZwKWurezYFNJXFO48nm9ar9A7CQRsgWD-u"/>
+<div class="absolute bottom-3 left-3 bg-surface-card/90 backdrop-blur-md px-3 py-1 rounded-full text-brand-navy-dark font-label-badge text-label-badge">
+                Copper &amp; PEX Experts
+              </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2">Plumbing Repairs &amp; Re-Piping</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Precision fixture rebuilding, whole-home PEX re-pipes, pressure-balancing valves, and silent toilet rebuilds.
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-secondary font-bold">Zero-Drip Guarantee</span>
+<a class="text-primary hover:text-primary-container font-label-md text-label-md" href="#booking-portal">Book →</a>
+</div>
+</div>
+<!-- Bento Card 4: Tankless Water Heaters -->
+<div class="bg-surface-card rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative h-44 rounded-2xl overflow-hidden mb-5">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern high efficiency tankless water heater system and whole home water filtration tanks installed in an immaculate modern utility closet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRzPyOVQeZRSarW7okIqDILWhKfbP0iTawrEO05GkFRVvL-NKz2Q5ojyZgXXFlu6pi_N0rRs4XN1uKEV3z4oG7V0RTbukQvWdt2c5pGO1Fdf8rLa_Idme321tIKqR4Q9E_VnRChShcbA-Mhk7R4_aqcIh3YiK7kewBiy9Ynx3060iNlALTWirVoNHGhDFlXDjBx5eRG3XDmXoJvqrfsFvqhI5LHCAJxlkGjKz7BmA_kgVL7qnFNZ2V"/>
+<div class="absolute bottom-3 left-3 bg-surface-card/90 backdrop-blur-md px-3 py-1 rounded-full text-brand-navy-dark font-label-badge text-label-badge">
+                Rinnai &amp; Navien Tier
+              </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2">Tankless &amp; Water Softening</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Endless hot water and mineral scale neutralization engineered specifically for West Houston’s hard municipal water chemistry.
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-secondary font-bold">Save up to 40% Energy</span>
+<a class="text-primary hover:text-primary-container font-label-md text-label-md" href="#booking-portal">Explore →</a>
+</div>
+</div>
+<!-- Bento Card 5: Smart Fixtures & Architectural Luxury -->
+<div class="bg-surface-card rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative h-44 rounded-2xl overflow-hidden mb-5">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Upscale modern kitchen island sink featuring a gleaming high-arc stainless steel spring faucet against marble countertops and bright interior aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzFOYXh7wf3arSKTG1uD5N3jhdmwBLFjq3dQYK2BJZsif9qAudFX6n0nYNt1P2QW78t1qnB1562KKEmLudieb2z66nQwCteeetfVAB83NcSuTlK7G4OiZrHB2AtmXDFmLENq-813ioJS1Aho8n4gCyyronlOS_C5xkxRwISdcaxeiTK1uWb1_8K97b_ZmHF9nnQgBR--KFqUWjUttijAoRaMxXRFh_LWwj6R29TOjC4yhG7qMemNwK"/>
+<div class="absolute bottom-3 left-3 bg-surface-card/90 backdrop-blur-md px-3 py-1 rounded-full text-brand-navy-dark font-label-badge text-label-badge">
+                Smart Water Tech
+              </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2">Smart Fixtures &amp; Leak Defense</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Acoustic ultrasonic leak sensors, touchless luxury fixtures, and automatic whole-house water shutoff valves.
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-secondary font-bold">WiFi Enabled Protection</span>
+<a class="text-primary hover:text-primary-container font-label-md text-label-md" href="#booking-portal">Install →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- THE BLUEFROG STANDARD -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Visual Column -->
+<div class="lg:col-span-5 relative order-2 lg:order-1">
+<div class="rounded-3xl overflow-hidden shadow-xl bg-surface-card p-3">
+<img class="w-full h-[480px] object-cover rounded-2xl" data-alt="Two smiling bluefrog plumbing technicians in crisp collared shirts standing proudly beside their stocked service van with plumbing snake tools and diagnostic tote bags" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjgE-2aK7NZILi6wIs48tApEXBItwFej4ojnb0V3Fc_Aq9VAJLKzRPnEyz9-p2YsIU5WZ9RLZwfzeBRO4vSI_7apqwYWbVNuwoaloKivM3hKqY5SjkZ1HDALfmT8BapRCoz_iImFF9ALa_-NMtmc0cJucwXQN0R4dpKHOSJIYGwgB3YvCkgEUXc38o6qgvEpWrJU8Jd_Ihz-MbG4GIW8XygSJCuVHa5wZgJpi2WSQ5Lr1BgRWt7MNo"/>
+</div>
+<!-- Floating Quality Badge -->
+<div class="absolute bottom-6 -right-4 md:right-4 bg-brand-navy-dark text-on-primary p-4 rounded-2xl shadow-xl flex items-center gap-3 max-w-xs">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary">The Less Mess. Less Stress. Guarantee</p>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Cleaner than we found it.</p>
+</div>
+</div>
+</div>
+<!-- Content Column -->
+<div class="lg:col-span-7 space-y-space-md order-1 lg:order-2">
+<div>
+<span class="font-label-badge text-label-badge uppercase tracking-[0.2em] text-primary font-bold block mb-2">Our Operating Protocol</span>
+<h2 class="font-headline-xl text-headline-xl text-brand-navy-dark leading-tight">
+              Why Discerning Homeowners Choose bluefrog
+            </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            We operate like a surgery suite, not an invasive construction zone. From our proprietary zero-mess protection protocol to transparent upfront estimates, we remove anxiety from residential plumbing.
+          </p>
+<div class="space-y-4 pt-2">
+<!-- Micro Pillar 1 -->
+<div class="p-5 rounded-2xl bg-surface-card shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">request_quote</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-brand-navy-dark">Guaranteed Upfront Flat-Pricing</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Never pay by the hour while a technician searches for parts. You receive an itemized, clear proposal before any wrench turns—guaranteed.
+                </p>
+</div>
+</div>
+<!-- Micro Pillar 2 -->
+<div class="p-5 rounded-2xl bg-surface-card shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-brand-navy-dark">Master-Certified In-House Technicians</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Zero sub-contractors. Every team member undergoes thorough background clearance, drug screening, and continuous factory certification.
+                </p>
+</div>
+</div>
+<!-- Micro Pillar 3 -->
+<div class="p-5 rounded-2xl bg-surface-card shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">sanitizer</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-brand-navy-dark">Surgical Cleanliness Standards</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Our specialists deploy protective neoprene floor runners, wear sanitized boot covers, and execute post-service sanitization before leaving.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EXCLUSIVE VIP CONCIERGE MEMBERSHIP -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="relative rounded-3xl bg-brand-navy-dark text-on-primary p-8 md:p-14 overflow-hidden shadow-2xl">
+<!-- Ambient accents -->
+<div class="pointer-events-none absolute top-0 right-0 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="pointer-events-none absolute bottom-0 left-1/4 w-80 h-80 bg-secondary/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 space-y-4">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-card/10 text-secondary-fixed font-label-badge text-label-badge uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+              Exclusive Homeowner Concierge
+            </span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary">
+              bfpad Proactive Protection Program™
+            </h2>
+<p class="font-body-lg text-body-lg text-surface-container-highest leading-relaxed">
+              Plumbing catastrophes rarely announce themselves. Join hundreds of proactive West Houston homeowners who secure their plumbing investments with preventative care.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+<div class="bg-brand-slate/60 backdrop-blur-md p-4 rounded-2xl">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px] mb-2">bolt</span>
+<p class="font-headline-sm text-headline-sm text-on-primary">Priority VIP</p>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Jump to the front of emergency queues</p>
+</div>
+<div class="bg-brand-slate/60 backdrop-blur-md p-4 rounded-2xl">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px] mb-2">checklist</span>
+<p class="font-headline-sm text-headline-sm text-on-primary">50-Pt Annual</p>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Free comprehensive plumbing inspection</p>
+</div>
+<div class="bg-brand-slate/60 backdrop-blur-md p-4 rounded-2xl">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px] mb-2">percent</span>
+<p class="font-headline-sm text-headline-sm text-on-primary">15% Savings</p>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Direct discount on all parts &amp; labor</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col items-center lg:items-end justify-center">
+<div class="w-full max-w-sm bg-surface-card text-brand-navy-dark p-6 rounded-2xl shadow-xl space-y-4">
+<div class="flex justify-between items-center">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">Membership Tier</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge">ACTIVE ENROLLMENT</span>
+</div>
+<div class="space-y-1">
+<span class="font-headline-xl text-headline-xl font-bold text-brand-navy-dark leading-none">$14.95</span>
+<span class="text-body-sm font-body-sm text-outline-variant">/month per single family residence</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Includes annual water heater flush and static pressure monitor test.</p>
+<a class="w-full inline-flex items-center justify-center py-3.5 px-6 rounded-full bg-secondary hover:bg-frog-green-hover text-on-primary font-label-lg text-label-lg shadow-md transition-all" href="#booking-portal">
+                Join the Proactive Club
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CURATED CLIENT EXPERIENCES (VERIFIED TESTIMONIALS) -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-badge text-label-badge uppercase tracking-[0.2em] text-primary font-bold block mb-2">Verified Homeowner Feedback</span>
+<h2 class="font-headline-xl text-headline-xl text-brand-navy-dark">What Our West Houston Neighbors Say</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Authentic reviews from verified local service appointments across Greater Houston.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Review Card 1 -->
+<div class="bg-surface-card p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-brand-navy-dark leading-relaxed italic">
+              "Bluefrog was on Angie’s List. They were quick to call and scheduled within the hour. I had a sprinkler leak that shut my water off. They explained their estimate and replaced the pipe quickly and efficiently."
+            </p>
+</div>
+<div class="pt-6">
+<p class="font-label-md text-label-md text-brand-navy-dark">Annie Q.</p>
+<span class="font-label-badge text-label-badge text-primary uppercase">Memorial City, TX</span>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-card p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-brand-navy-dark leading-relaxed italic">
+              "Service technician showed up on time and quickly identified our problem. Gave us a great quote and had our blockage fixed in no time. I would recommend them to anyone and will definitely use them again!"
+            </p>
+</div>
+<div class="pt-6">
+<p class="font-label-md text-label-md text-brand-navy-dark">Tom V.</p>
+<span class="font-label-badge text-label-badge text-primary uppercase">Katy &amp; Cinco Ranch</span>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface-card p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-brand-navy-dark leading-relaxed italic">
+              "Technician was on time, and thoroughly diagnosed and remedied the problem. Spotless clean work area when done. Rare caliber of professionalism."
+            </p>
+</div>
+<div class="pt-6">
+<p class="font-label-md text-label-md text-brand-navy-dark">Vance G.</p>
+<span class="font-label-badge text-label-badge text-primary uppercase">Sugar Land, TX</span>
+</div>
+</div>
+<!-- Review Card 4 -->
+<div class="bg-surface-card p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-brand-navy-dark leading-relaxed italic">
+              "Thank you Brent and Andrew for coming over so quickly and helping with my plumbing issues! You saved my 4th of July party!! Always a pleasure doing business with you guys!"
+            </p>
+</div>
+<div class="pt-6">
+<p class="font-label-md text-label-md text-brand-navy-dark">Samantha K.</p>
+<span class="font-label-badge text-label-badge text-primary uppercase">Spring Branch, TX</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RAPID GEOGRAPHIC DISPATCH -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="p-8 md:p-12 rounded-3xl bg-surface-card shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="space-y-4 max-w-xl">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Live Fleet Transit Tracker
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark">Rapid Dispatch Across 16 Houston Hubs</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Our strategically distributed fleet ensures an average transit arrival time of under 45 minutes anywhere within the West Houston loop and surrounding suburbs.
+          </p>
+<!-- Badges Grid of 16 Serviced Communities -->
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">West Houston</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Memorial City</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Katy</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Spring Branch West</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Greater Heights</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Sugar Land</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Rice Village</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">River Oaks</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">West University</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Houston Heights</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Pearland</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Friendswood</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">League City</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Clear Lake</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Missouri City</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy-dark font-body-sm text-body-sm">Bellaire</span>
+</div>
+</div>
+<div class="w-full lg:w-96 shrink-0 bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-brand-navy-dark">Central Dispatch Center</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">10645 Richmond Ave, Ste 140</p>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Live Response ETA:</span>
+<span class="font-label-md text-label-md text-secondary">≤ 45 Minutes</span>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors" href="tel:8326503706">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+            Call Dispatch Direct
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- PRIORITY CONCIERGE SCHEDULING SUITE -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24" id="booking-portal">
+<div class="max-w-4xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="bg-surface-card rounded-3xl p-8 md:p-12 shadow-xl">
+<div class="text-center max-w-xl mx-auto mb-8 space-y-2">
+<span class="font-label-badge text-label-badge uppercase tracking-[0.2em] text-primary font-bold">Fast-Track Service Portal</span>
+<h2 class="font-headline-xl text-headline-xl text-brand-navy-dark">Schedule Priority Dispatch</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Lock in an arrival window. A Master Plumber will contact you immediately to confirm diagnostics.
+          </p>
+</div>
+<!-- High-Conversion Form -->
+<form class="space-y-5" onsubmit="event.preventDefault(); alert('Priority service request logged. A bluefrog dispatcher is calling your number now.');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5">Full Name *</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-card focus:shadow-md transition-all font-body-md text-body-md" placeholder="e.g. Eleanor Vance" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5">Phone Number *</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-card focus:shadow-md transition-all font-body-md text-body-md" placeholder="(832) 000-0000" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5">Email Address *</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-card focus:shadow-md transition-all font-body-md text-body-md" placeholder="name@domain.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5">Service Category *</label>
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-card focus:shadow-md transition-all font-body-md text-body-md" required="">
+<option value="">Select Plumbing Issue...</option>
+<option value="drain">Emergency Drain Clearing / Hydro-Jetting</option>
+<option value="water-heater">Water Heater Repair or Replacement</option>
+<option value="leak">Slab Leak / Ultrasonic Leak Detection</option>
+<option value="repipe">Pipe Leak / Whole-Home Repiping</option>
+<option value="toilet">Toilet Backup or Fixture Replacement</option>
+<option value="filtration">Water Softener / Whole Home Filtration</option>
+<option value="commercial">Commercial Plumbing &amp; Grease Traps</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5">Street Address *</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-card focus:shadow-md transition-all font-body-md text-body-md" placeholder="1234 Memorial Dr" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5">ZIP Code *</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-card focus:shadow-md transition-all font-body-md text-body-md" placeholder="77042" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1.5">Describe the Issue (Optional)</label>
+<textarea class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-card focus:shadow-md transition-all font-body-md text-body-md" placeholder="Briefly describe sounds, leak location, or emergency urgency..." rows="3"></textarea>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-outline-variant">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock</span>
+<span>Encrypted dispatch channel • Zero commitment</span>
+</div>
+<button class="w-full sm:w-auto px-10 py-4 rounded-full bg-secondary hover:bg-frog-green-hover text-on-primary font-label-lg text-label-lg shadow-lg hover:shadow-xl transition-all duration-300" type="submit">
+              Confirm Priority Service
+            </button>
+</div>
+</form>
+<!-- Emergency Alternative Strip -->
+<div class="mt-8 pt-6 border-t border-border-light flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emergency-red text-[24px]">crisis_alert</span>
+<p class="font-body-sm text-body-sm text-brand-navy-dark">
+              Active structural flood or gas smell? Skip the web form.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-primary-container" href="tel:8326503706">
+            Direct Emergency Line: (832) 650-3706 →
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-brand-navy-dark text-on-primary mt-space-xl"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="h-9 w-9 rounded-full bg-surface-card flex items-center justify-center p-space-xs"><span class="material-symbols-outlined text-primary text-[22px]">water_drop</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-primary tracking-tight leading-none">bluefrog Plumbing + Drain</span><span class="font-label-badge text-label-badge tracking-wider text-secondary-fixed">WEST HOUSTON REGION</span></div></div><p class="font-body-md text-body-md text-surface-container-highest max-w-md">Premier residential and commercial plumbing specialists providing punctual, spotless, and guaranteed drain and plumbing solutions 24/7 across the Greater West Houston corridor.</p><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container-highest pt-space-xs"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0 mt-0.5">location_on</span><span>10645 Richmond Ave., Houston, TX 77042</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0">verified</span><span>Master Plumber License: MPL #17531</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0">ring_volume</span><span>Emergency Hotline: (832) 650-3706</span></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-primary tracking-wide">Core Solutions</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container-highest"><li class="hover:text-secondary-fixed transition-colors"><a href="#">Emergency Drain Clearing</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Tankless Water Heaters</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Hydro-Jetting Technology</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Slab Leak Detection</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Whole-Home Repiping</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Commercial Jetting &amp; Traps</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-primary tracking-wide">Coverage Areas</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container-highest"><li class="hover:text-secondary-fixed transition-colors"><a href="#">West Houston &amp; Memorial</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Energy Corridor</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Katy &amp; Cinco Ranch</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Sugar Land</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Richmond &amp; Rosenberg</a></li><li class="hover:text-secondary-fixed transition-colors"><a href="#">Spring Branch</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-primary tracking-wide">The Trust Seal</span><div class="flex flex-col gap-space-sm"><div class="bg-brand-slate p-space-sm rounded-xl flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary-fixed text-[24px]">verified_user</span><div><div class="font-label-md text-label-md text-on-primary">Zero Diagnostic Fee</div><div class="font-body-sm text-body-sm text-surface-container-highest">With repair service</div></div></div><div class="bg-brand-slate p-space-sm rounded-xl flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary-fixed text-[24px]">clean_hands</span><div><div class="font-label-md text-label-md text-on-primary">Leave No Mess</div><div class="font-body-sm text-body-sm text-surface-container-highest">Booties &amp; mats standard</div></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-outline-variant"><p>© 2025 bluefrog Plumbing + Drain of West Houston. All Rights Reserved. Regulated by the Texas State Board of Plumbing Examiners.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" href="#">Terms of Service</a><a class="hover:text-on-primary transition-colors" href="#">Warranty Scope</a></div></div></div></footer><div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-brand-navy-dark/95 backdrop-blur-lg p-space-sm shadow-[0_-4px_16px_rgba(0,0,0,0.2)] flex items-center gap-space-sm"><a class="flex-1 inline-flex items-center justify-center gap-space-xs bg-brand-slate text-on-primary py-space-sm rounded-full font-label-md text-label-md active:bg-slate-700 transition-colors" href="tel:8326503706"><span class="material-symbols-outlined text-emergency-red text-[18px]">call</span>Call Dispatch</a><a class="flex-1 inline-flex items-center justify-center bg-secondary hover:bg-frog-green-hover text-on-primary py-space-sm rounded-full font-label-md text-label-md shadow-[0_2px_8px_rgba(104,188,54,0.4)] transition-all" data-path="schedule-service" href="#">Schedule Online</a></div></body></html>

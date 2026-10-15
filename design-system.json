@@ -1,0 +1,180 @@
+{
+  "displayName": "Premium Home Services",
+  "styleGuidelines": "## Brand & Style\n\nThis design system establishes a high-trust, responsive, and approachable digital experience tailored for premier residential and commercial plumbing services in the West Houston metroplex. The aesthetic combines clean Modern Corporate reliability with high-converting local service hospitality. \n\nKey attributes:\n- **Trustworthy & Punctual:** Reassuring, dependable, and licensed tone that reduces panic during home emergencies.\n- **Approachable & Fresh:** Inviting signature blue and energetic frog-green accents evoke cleanliness, environmental mindfulness, and swift resolution.\n- **Conversion-Optimized Clarity:** Frictionless pathways to immediate actions—such as direct 24/7 emergency dispatch and instant online service booking.\n- **Tactile Modernism:** Subtle surface depth, clear visual enclosures, crisp borders, and elevated pill badges replace visual clutter with breathing room and confidence.\n\n## Layout & Spacing\n\nA structured 12-column responsive fluid grid anchors desktop experiences, collapsing to an 8-column layout on tablet and a 4-column layout on mobile devices.\n\n- **Rhythm Philosophy:** Based on a strict 8px/4px base spatial unit, ensuring visual consistency between input groups, service cards, and sticky action bars.\n- **Breakpoints:**\n  - **Mobile (< 768px):** 4 columns, `16px` outer margins, `16px` gutters. Emergency calls and booking CTAs anchor permanently to a sticky mobile bottom dock.\n  - **Tablet (768px – 1024px):** 8 columns, `24px` outer margins, `24px` gutters. 2-column service card layouts with inline quote triggers.\n  - **Desktop (> 1024px):** 12 columns, max-width container capped at `1280px` with generous section buffers (`40px`–`64px`) to project premium spatial clarity.\n\n## Elevation & Depth\n\nVisual hierarchy leverages ambient, tinted depth layers rather than muddy shadows, maintaining a sparkling, hygienic presentation:\n\n- **Level 0 (Flat Surface):** `#F8FAFC` base page backdrop.\n- **Level 1 (Card & Modular Tier):** `#FFFFFF` surfaces paired with an ultra-soft blue-tinted ambient shadow (`0 2px 8px -2px rgba(15, 23, 42, 0.05), 0 1px 4px -1px rgba(0, 114, 206, 0.04)`) and a delicate border (`1px solid #E2E8F0`).\n- **Level 2 (Interactive Floating & Hover):** Lifted service cards and active selectors trigger an ambient elevation of `0 12px 24px -6px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(0, 114, 206, 0.06)`, slightly raising the Y-axis by `-2px`.\n- **Level 3 (Sticky Navbars, Emergency Floating Bars, Modals):** Crisp floating overlays backed by `rgba(255, 255, 255, 0.92)` with `backdrop-filter: blur(12px)` and deeper structural ambient drop shadow (`0 20px 30px -10px rgba(15, 23, 42, 0.12)`).\n\n## Components\n\n### Buttons\n- **Primary Conversion Button (\"Schedule Service\"):** Green accent (`#68BC36`) background with white bold text, pill-shaped radius, horizontal padding of `1.75rem`, vertical padding of `0.875rem`. Hover transition shifts to `#58A42B` with a gentle `0 4px 14px rgba(104, 188, 54, 0.35)` glow.\n- **Emergency Call Button (\"24/7 Dispatch\"):** Primary blue (`#0072CE`) or urgent dark slate background with a prominent phone icon, pill shape, high contrast, and animated subtle pulse on live status indicator dot.\n- **Secondary / Outline:** Transparent background with 2px stroke in `#0072CE`, hover state filling to `#F1F5F9`.\n\n### Badges & Pill Chips\n- **Trust & Certification Badges:** Small pill badges with soft blue (`#EFF6FF`) or green tint backgrounds (`#F0FDF4`), featuring 1px subtle matching borders and crisp uppercase label typography.\n- **Service Tags:** Filter chips (e.g., \"Drain Cleaning\", \"Water Heaters\", \"Hydro Jetting\") with light gray background (`#F1F5F9`) transitioning to solid blue on active selection.\n\n### Service & Testimonial Cards\n- **Construction:** Crisp white (`#FFFFFF`) containers on `#F8FAFC` background. 16px border-radius, 1px border (`#E2E8F0`), padding of `24px` on mobile and `32px` on desktop.\n- **Feature Icons:** Encased in circular or squircle containers with light ice-blue backgrounds (`#E0F2FE`) and primary blue iconography.\n\n### Form Inputs\n- **Fields:** 48px height minimum for mobile touch accessibility. White background, 1px `#CBD5E1` border, 8px radius. Active focus switches border to `#0072CE` with an outer focus ring `box-shadow: 0 0 0 3px rgba(0, 114, 206, 0.15)`.\n\n### Emergency Sticky Bar\n- **Mobile Fixed Footer:** A high-converting bottom drawer fixed at screen base containing dual split CTAs: direct 1-tap dial on the left (`#0F172A`), and instant online booking on the right (`#68BC36`).",
+  "theme": {
+    "colorMode": "LIGHT",
+    "font": "PLUS_JAKARTA_SANS",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#0072ce",
+    "headlineFont": "PLUS_JAKARTA_SANS",
+    "bodyFont": "PLUS_JAKARTA_SANS",
+    "labelFont": "PLUS_JAKARTA_SANS",
+    "namedColors": {
+      "secondary": "#2d6c00",
+      "outline": "#717783",
+      "surface_container_highest": "#dae2fd",
+      "secondary_fixed_dim": "#85dc52",
+      "inverse_primary": "#a5c8ff",
+      "tertiary_fixed": "#c6e7ff",
+      "on_error_container": "#93000a",
+      "on_secondary_container": "#307300",
+      "secondary_fixed": "#a0f96b",
+      "on_error": "#ffffff",
+      "primary_fixed_dim": "#a5c8ff",
+      "surface-subtle": "#F8FAFC",
+      "frog-green-hover": "#58A42B",
+      "primary": "#0059a4",
+      "outline_variant": "#c1c7d4",
+      "inverse_on_surface": "#eef0ff",
+      "surface_container_low": "#f2f3ff",
+      "surface_container_high": "#e2e7ff",
+      "tertiary_fixed_dim": "#81cfff",
+      "surface_container_lowest": "#ffffff",
+      "brand-navy-dark": "#0F172A",
+      "on_tertiary_fixed_variant": "#004c6b",
+      "surface_dim": "#d2d9f4",
+      "brand-slate": "#1E293B",
+      "on_primary_fixed_variant": "#004785",
+      "on_secondary": "#ffffff",
+      "secondary_container": "#a0f96b",
+      "error": "#ba1a1a",
+      "on_primary_fixed": "#001c3a",
+      "tertiary_container": "#0079a7",
+      "on_primary_container": "#f4f6ff",
+      "on_surface": "#131b2e",
+      "surface_tint": "#005fae",
+      "emergency-red": "#DC2626",
+      "background": "#faf8ff",
+      "on_tertiary_container": "#f0f8ff",
+      "on_tertiary": "#ffffff",
+      "on_surface_variant": "#414752",
+      "surface": "#faf8ff",
+      "on_primary": "#ffffff",
+      "border-light": "#E2E8F0",
+      "primary_fixed": "#d4e3ff",
+      "surface_container": "#eaedff",
+      "inverse_surface": "#283044",
+      "primary_container": "#0072ce",
+      "on_secondary_fixed_variant": "#205100",
+      "on_secondary_fixed": "#092100",
+      "surface-accent": "#F1F5F9",
+      "on_tertiary_fixed": "#001e2d",
+      "error_container": "#ffdad6",
+      "tertiary": "#005f84",
+      "surface-card": "#FFFFFF",
+      "on_background": "#131b2e",
+      "surface_bright": "#faf8ff",
+      "surface_variant": "#dae2fd"
+    },
+    "designMd": "---\nname: Premium Home Services\ncolors:\n  surface: '#faf8ff'\n  surface-dim: '#d2d9f4'\n  surface-bright: '#faf8ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f2f3ff'\n  surface-container: '#eaedff'\n  surface-container-high: '#e2e7ff'\n  surface-container-highest: '#dae2fd'\n  on-surface: '#131b2e'\n  on-surface-variant: '#414752'\n  inverse-surface: '#283044'\n  inverse-on-surface: '#eef0ff'\n  outline: '#717783'\n  outline-variant: '#c1c7d4'\n  surface-tint: '#005fae'\n  primary: '#0059a4'\n  on-primary: '#ffffff'\n  primary-container: '#0072ce'\n  on-primary-container: '#f4f6ff'\n  inverse-primary: '#a5c8ff'\n  secondary: '#2d6c00'\n  on-secondary: '#ffffff'\n  secondary-container: '#a0f96b'\n  on-secondary-container: '#307300'\n  tertiary: '#005f84'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#0079a7'\n  on-tertiary-container: '#f0f8ff'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#d4e3ff'\n  primary-fixed-dim: '#a5c8ff'\n  on-primary-fixed: '#001c3a'\n  on-primary-fixed-variant: '#004785'\n  secondary-fixed: '#a0f96b'\n  secondary-fixed-dim: '#85dc52'\n  on-secondary-fixed: '#092100'\n  on-secondary-fixed-variant: '#205100'\n  tertiary-fixed: '#c6e7ff'\n  tertiary-fixed-dim: '#81cfff'\n  on-tertiary-fixed: '#001e2d'\n  on-tertiary-fixed-variant: '#004c6b'\n  background: '#faf8ff'\n  on-background: '#131b2e'\n  surface-variant: '#dae2fd'\n  brand-navy-dark: '#0F172A'\n  brand-slate: '#1E293B'\n  surface-subtle: '#F8FAFC'\n  surface-card: '#FFFFFF'\n  surface-accent: '#F1F5F9'\n  border-light: '#E2E8F0'\n  frog-green-hover: '#58A42B'\n  emergency-red: '#DC2626'\ntypography:\n  display-hero:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 52px\n    fontWeight: '800'\n    lineHeight: 60px\n    letterSpacing: -0.03em\n  display-hero-mobile:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 36px\n    fontWeight: '800'\n    lineHeight: 42px\n    letterSpacing: -0.02em\n  headline-xl:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 40px\n    fontWeight: '700'\n    lineHeight: 48px\n    letterSpacing: -0.02em\n  headline-xl-mobile:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 28px\n    fontWeight: '700'\n    lineHeight: 34px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 30px\n    fontWeight: '700'\n    lineHeight: 38px\n    letterSpacing: -0.015em\n  headline-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 22px\n    fontWeight: '600'\n    lineHeight: 30px\n  headline-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 26px\n  body-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  body-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 16px\n    fontWeight: '700'\n    lineHeight: 20px\n    letterSpacing: 0.01em\n  label-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 18px\n    letterSpacing: 0.02em\n  label-badge:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 12px\n    fontWeight: '700'\n    lineHeight: 16px\n    letterSpacing: 0.04em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 2rem\n  margin-mobile: 1rem\n  margin-desktop: 3rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThis design system establishes a high-trust, responsive, and approachable digital experience tailored for premier residential and commercial plumbing services in the West Houston metroplex. The aesthetic combines clean Modern Corporate reliability with high-converting local service hospitality. \n\nKey attributes:\n- **Trustworthy & Punctual:** Reassuring, dependable, and licensed tone that reduces panic during home emergencies.\n- **Approachable & Fresh:** Inviting signature blue and energetic frog-green accents evoke cleanliness, environmental mindfulness, and swift resolution.\n- **Conversion-Optimized Clarity:** Frictionless pathways to immediate actions—such as direct 24/7 emergency dispatch and instant online service booking.\n- **Tactile Modernism:** Subtle surface depth, clear visual enclosures, crisp borders, and elevated pill badges replace visual clutter with breathing room and confidence.\n\n## Colors\n\nThe palette balances vibrant aquatic blues with energetic organic greens, supported by structural deep slates and crisp neutral whites.\n\n- **Primary (`#0072CE`)**: The authoritative brand water blue, used for primary utility navigation, active states, key interactive links, and core headers.\n- **Secondary (`#68BC36`)**: The vibrant frog-green accent, strictly deployed as an action and conversion catalyst for booking buttons, \"Available Now\" badges, confirmation states, and emergency telephone triggers.\n- **Tertiary (`#00A3E0`)**: A brighter electric cyan-blue utilized for secondary highlights, gradient accents, interactive hover halos, and iconography backdrops.\n- **Neutral Dark (`#0F172A` & `#1E293B`)**: Rich slate navy providing maximum typographic readability and visual anchoring for body copy and headings, replacing harsh pure black.\n- **Surface & Backgrounds (`#FFFFFF`, `#F8FAFC`, `#F1F5F9`)**: Crisp light surfaces provide clean, hospital-grade reassurance, delivering distinct card-to-canvas contrast without heavy lines.\n- **Emergency Accent (`#DC2626`)**: Reserved exclusively for high-urgency badges such as \"24/7 Burst Pipe Emergency\" or priority warning notifications.\n\n## Typography\n\nThe typography centers on **Plus Jakarta Sans**, offering a clean, contemporary grotesque sans-serif with refined terminals and warm, modern geometrics. This elevates the interface beyond generic home services templates into a modern, customer-first service brand.\n\n- **Scale & Rhythm:** Bold display styles drive fast, legible scanning for customers in crisis, while generous body line-heights preserve readability across mobile diagnostic checklists and service descriptions.\n- **Badges and Metadata:** Small-scale labels utilize increased letter-spacing (`0.02em` to `0.04em`) and uppercase/semi-bold weights to clearly communicate certifications (e.g., \"LICENSED & INSURED\", \"WEST HOUSTON VERIFIED\").\n\n## Layout & Spacing\n\nA structured 12-column responsive fluid grid anchors desktop experiences, collapsing to an 8-column layout on tablet and a 4-column layout on mobile devices.\n\n- **Rhythm Philosophy:** Based on a strict 8px/4px base spatial unit, ensuring visual consistency between input groups, service cards, and sticky action bars.\n- **Breakpoints:**\n  - **Mobile (< 768px):** 4 columns, `16px` outer margins, `16px` gutters. Emergency calls and booking CTAs anchor permanently to a sticky mobile bottom dock.\n  - **Tablet (768px – 1024px):** 8 columns, `24px` outer margins, `24px` gutters. 2-column service card layouts with inline quote triggers.\n  - **Desktop (> 1024px):** 12 columns, max-width container capped at `1280px` with generous section buffers (`40px`–`64px`) to project premium spatial clarity.\n\n## Elevation & Depth\n\nVisual hierarchy leverages ambient, tinted depth layers rather than muddy shadows, maintaining a sparkling, hygienic presentation:\n\n- **Level 0 (Flat Surface):** `#F8FAFC` base page backdrop.\n- **Level 1 (Card & Modular Tier):** `#FFFFFF` surfaces paired with an ultra-soft blue-tinted ambient shadow (`0 2px 8px -2px rgba(15, 23, 42, 0.05), 0 1px 4px -1px rgba(0, 114, 206, 0.04)`) and a delicate border (`1px solid #E2E8F0`).\n- **Level 2 (Interactive Floating & Hover):** Lifted service cards and active selectors trigger an ambient elevation of `0 12px 24px -6px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(0, 114, 206, 0.06)`, slightly raising the Y-axis by `-2px`.\n- **Level 3 (Sticky Navbars, Emergency Floating Bars, Modals):** Crisp floating overlays backed by `rgba(255, 255, 255, 0.92)` with `backdrop-filter: blur(12px)` and deeper structural ambient drop shadow (`0 20px 30px -10px rgba(15, 23, 42, 0.12)`).\n\n## Shapes\n\nThe interface adopts a balanced **Rounded (`2`)** shape vocabulary:\n- **Default Elements:** 8px (`0.5rem`) border radius on form inputs, small cards, tooltips, and badges.\n- **Containers & Big Cards:** 16px (`1rem`) on service offer boxes, trust matrices, and review showcases (`rounded-lg`).\n- **Pills & Direct Actions:** Full pill styling (`9999px`) is applied deliberately to high-priority interactive touchpoints: primary booking CTA buttons, emergency phone call buttons, status badges, and neighborhood filter chips.\n\n## Components\n\n### Buttons\n- **Primary Conversion Button (\"Schedule Service\"):** Green accent (`#68BC36`) background with white bold text, pill-shaped radius, horizontal padding of `1.75rem`, vertical padding of `0.875rem`. Hover transition shifts to `#58A42B` with a gentle `0 4px 14px rgba(104, 188, 54, 0.35)` glow.\n- **Emergency Call Button (\"24/7 Dispatch\"):** Primary blue (`#0072CE`) or urgent dark slate background with a prominent phone icon, pill shape, high contrast, and animated subtle pulse on live status indicator dot.\n- **Secondary / Outline:** Transparent background with 2px stroke in `#0072CE`, hover state filling to `#F1F5F9`.\n\n### Badges & Pill Chips\n- **Trust & Certification Badges:** Small pill badges with soft blue (`#EFF6FF`) or green tint backgrounds (`#F0FDF4`), featuring 1px subtle matching borders and crisp uppercase label typography.\n- **Service Tags:** Filter chips (e.g., \"Drain Cleaning\", \"Water Heaters\", \"Hydro Jetting\") with light gray background (`#F1F5F9`) transitioning to solid blue on active selection.\n\n### Service & Testimonial Cards\n- **Construction:** Crisp white (`#FFFFFF`) containers on `#F8FAFC` background. 16px border-radius, 1px border (`#E2E8F0`), padding of `24px` on mobile and `32px` on desktop.\n- **Feature Icons:** Encased in circular or squircle containers with light ice-blue backgrounds (`#E0F2FE`) and primary blue iconography.\n\n### Form Inputs\n- **Fields:** 48px height minimum for mobile touch accessibility. White background, 1px `#CBD5E1` border, 8px radius. Active focus switches border to `#0072CE` with an outer focus ring `box-shadow: 0 0 0 3px rgba(0, 114, 206, 0.15)`.\n\n### Emergency Sticky Bar\n- **Mobile Fixed Footer:** A high-converting bottom drawer fixed at screen base containing dual split CTAs: direct 1-tap dial on the left (`#0F172A`), and instant online booking on the right (`#68BC36`).",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#0072ce",
+    "overrideSecondaryColor": "#68bc36",
+    "overrideTertiaryColor": "#00a3e0",
+    "overrideNeutralColor": "#0f172a",
+    "spacingScale": 2,
+    "typography": {
+      "display-hero-mobile": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "36px",
+        "fontWeight": "800",
+        "lineHeight": "42px",
+        "letterSpacing": "-0.02em"
+      },
+      "label-badge": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "lineHeight": "16px",
+        "letterSpacing": "0.04em"
+      },
+      "display-hero": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "52px",
+        "fontWeight": "800",
+        "lineHeight": "60px",
+        "letterSpacing": "-0.03em"
+      },
+      "headline-xl-mobile": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "34px",
+        "letterSpacing": "-0.01em"
+      },
+      "label-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "0.02em"
+      },
+      "headline-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "38px",
+        "letterSpacing": "-0.015em"
+      },
+      "headline-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "22px",
+        "fontWeight": "600",
+        "lineHeight": "30px"
+      },
+      "body-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px"
+      },
+      "headline-xl": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "40px",
+        "fontWeight": "700",
+        "lineHeight": "48px",
+        "letterSpacing": "-0.02em"
+      },
+      "body-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "label-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "lineHeight": "20px",
+        "letterSpacing": "0.01em"
+      },
+      "body-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px"
+      },
+      "headline-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "26px"
+      }
+    },
+    "spacing": {
+      "space-xs": "0.25rem",
+      "space-xl": "2.5rem",
+      "space-md": "1rem",
+      "margin-mobile": "1rem",
+      "space-sm": "0.5rem",
+      "gutter-mobile": "1rem",
+      "margin": "2rem",
+      "gutter": "1.5rem",
+      "margin-desktop": "3rem",
+      "space-lg": "1.5rem"
+    },
+    "headlineFontFamily": "Plus Jakarta Sans",
+    "bodyFontFamily": "Plus Jakarta Sans",
+    "labelFontFamily": "Plus Jakarta Sans"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "projectId": "projects/5594227062750512285",
+  "title": "Bluefrog Plumbing",
+  "importedAt": "2026-10-14T16:43:28.636Z",
+  "screens": [
+    {
+      "id": "207ed885475d43c19c1c001fc7493d05",
+      "sourceScreen": "projects/5594227062750512285/screens/207ed885475d43c19c1c001fc7493d05",
+      "title": "bluefrog Plumbing + Drain - Modern Elite Landing Page",
+      "slug": "modern-elite-landing-page",
+      "filename": "variants/modern-elite-landing-page-207ed885.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XU3xXD1d-i7y7-_K1YwPWAl-b-ea5X4n1k1yjvi6jaLo2v4877N91KvyX0PNIZpcxje5n2Go9iYngc_VDrpolA6DXNXrPa_sM-mKefG4uaNxiInSX6yoCRN5Gl-2EpPEkWxf-qTMyn8xLRLgnc7ecO8Ay3t_ODBsi1LX5gq-aY2p2s5R4IIUbOaHarrMgK4wrIi0FTGy5LHt_gSYY9ohMxD8-U9IHvxiWckAUxUjfPPuyBvW4seVFfElw",
+      "isActive": false
+    },
+    {
+      "id": "5775375a8b064fd59a35b41818769f16",
+      "sourceScreen": "projects/5594227062750512285/screens/5775375a8b064fd59a35b41818769f16",
+      "title": "bluefrog Plumbing + Drain - Modern Flagship Landing Page",
+      "slug": "modern-flagship-landing-page",
+      "filename": "variants/modern-flagship-landing-page-5775375a.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VU7Zetck6y6XCnLkRgnC6FlYqaevo1LSaX2MuE5WQUgKb1owPeMiA6qtwLpclo6ztaxaTwKTHENpV-1QQhQ8YOv-GojD2DJC3Q-b8WNZDDkZlDlGQztznuRU9sk9O4EUgDfE5gdoa8ePEGpozOnyjSU5LEr3LezxUloKG0kr-pT7PQSxYKtCifdKhUhCLbeOtrVLxRmzf0MI4Hf_fQ-gaZojsG7OXavsCa_fV5VAhfJhKlyF15VScRCg",
+      "isActive": false
+    },
+    {
+      "id": "66562a41564149188f1aefc7fd47ab91",
+      "sourceScreen": "projects/5594227062750512285/screens/66562a41564149188f1aefc7fd47ab91",
+      "title": "bluefrog Plumbing - Tech-Forward Precision Studio",
+      "slug": "tech-forward-precision-studio",
+      "filename": "variants/tech-forward-precision-studio-66562a41.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XKMuN1k-8ZOt7SdwbPvLL_ZJp6M9vij6pJ02FMG4a310wCXtMo_bFLb13rKItDrAlwTbtnxMTPfrfXjBTN9RtTUvstvDbtEQ9LspAB_u9Q5S1Usg01OQP_dLJ6GH5Vh3PrUaQkc_d3esFBn7LXjChcGSR51Ne-kexgd99yIALhgE7jmNzpcxts51YkbtFqo9xq9XV1VhMDdnW8raTZvt32I6lT_PnaXgiXtLyNd8y4khU1pTDKzXAn0Uc",
+      "isActive": false
+    },
+    {
+      "id": "8eee9ef8b96141b48eff3a14eb2ab232",
+      "sourceScreen": "projects/5594227062750512285/screens/8eee9ef8b96141b48eff3a14eb2ab232",
+      "title": "bluefrog Plumbing - Contemporary Nordic Boutique",
+      "slug": "contemporary-nordic-boutique",
+      "filename": "variants/contemporary-nordic-boutique-8eee9ef8.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WV4C-f2epeqe73UJhZAVXA7ZKXkZVF7z0ATmt2iuICPzKRhc3BJaUmJK3vS5MVrCtSH8PMpnmQNBfVdcfV3zqO9MtO7AlOorS7AAQBuVaA1xG4g6LMnMEwh8XKpVpr08ROEcKGDnMj1VvzBg3iMYOr2ac4f2w0JeZljlPr0VjMRHHPlDbsdg5dSZ2egfEViVsABd01dYZn62LE3KFNQK3ardfkVP6qaKiz9Zyh2mP968WVZlMLrrjv3eY",
+      "isActive": true
+    },
+    {
+      "id": "99769bd5a0e344009556bbbf8adb1884",
+      "sourceScreen": "projects/5594227062750512285/screens/99769bd5a0e344009556bbbf8adb1884",
+      "title": "bluefrog Plumbing + Drain - Modern Luxury Flagship",
+      "slug": "modern-luxury-flagship",
+      "filename": "variants/modern-luxury-flagship-99769bd5.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WJNLa_aLnUeITa-FHtuYTvaFC3g_f-Zk6E4nRLb86H9goqaFtXCeg3TuvJHCeW05TCdQhG7SIISAtwvWoO2VO_42AQLEbr7xop9Gos3dpjVG6tTQn2IOoORqtvzyeETrbbu5ZOUXhny45mUxJLkiRIhtBrkDjvzjNQnAuqFLJmQBaFeDIEh8eE96cFz3SUnHXs3TcHF2aBbbdFZ9nZ2ubllw861yrzSseIJ9_g7v1kxDLbPEuFEZ0Rwg",
+      "isActive": false
+    },
+    {
+      "id": "a38b3f7d890e40c7abc8215fa5d75e69",
+      "sourceScreen": "projects/5594227062750512285/screens/a38b3f7d890e40c7abc8215fa5d75e69",
+      "title": "bluefrog Plumbing + Drain - Modern Clean Flagship",
+      "slug": "modern-clean-flagship",
+      "filename": "variants/modern-clean-flagship-a38b3f7d.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XRVghkFMaiFc0wGRnlcF8xndWdU-_9zaUGfvxVLtTp41c-y8_bEresIdHfDl2BQagSbxBF1U-8VtgOeMoU70vNl1BCUJqTsthjDVVVJQBJwgM5X_b-aHh6ng3wTR-uBqdIoNaSfDPHZqstjCw_PDfO_UavXZXzuniUu2v1OOACVAk73FrMUGQptG5867VFslc8SpOSdUllPgeHbhWrjlMWe8h4enR6UiCK60ONUTaUBI8gCz0MltAHMX8",
+      "isActive": false
+    },
+    {
+      "id": "af49ad00871e4bcfb4468aba21858d45",
+      "sourceScreen": "projects/5594227062750512285/screens/af49ad00871e4bcfb4468aba21858d45",
+      "title": "bluefrog Plumbing + Drain - Authentic West Houston Redesign",
+      "slug": "authentic-west-houston-redesign",
+      "filename": "variants/authentic-west-houston-redesign-af49ad00.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XqbdtWehdijK6fHcDPFSGK81vzlLhns7IWYwTaoh6OzxlqvHB3iEFgIj31uqxCQOzyk7bPRbY2THZU5NrIHwPYZZi7aFWoE_5G0e3t5PYdtUz0edkx1P3pdPQZrJBkpB8FxSnDkb0Q9w5EMdn8hh_yqQPdBPEalRCH2mgUqRXeVn30zRhk00fqRV9ATzNvC3yp4Gc679CDOSTLR9TuFkrizF7fVVSPnvhD_GA79_Mhkbznmi-RMRHrVPk",
+      "isActive": false
+    },
+    {
+      "id": "b79d3ed237a34f59829fce3a7e40e404",
+      "sourceScreen": "projects/5594227062750512285/screens/b79d3ed237a34f59829fce3a7e40e404",
+      "title": "bluefrog Plumbing + Drain - West Houston Landing Page",
+      "slug": "west-houston-landing-page",
+      "filename": "variants/west-houston-landing-page-b79d3ed2.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1U_EalezB8UFZ16uRFP2elpW11NWYkxKpStboAklNj71lFsWfmMO86OkMgPplZy76VZxIz1f5i_4B6F8c9PZow1Vi9JjaL7aQxeCoSZeXzNyf-k5HTNBX-NV-RhlTPXdVw5QdUzva7H3S5LOHq7QqU8OsbJ3_dbSAxFYNxHSf7D93ehRHEotNHcyTxBYZkru81sDu1yKExIu8uYU2AKIH5177URMF_9iIfx4BxDWN3Q8vDr1uW5CBNlnqA",
+      "isActive": false
+    },
+    {
+      "id": "b99a9116b717456181fe2500f211d63b",
+      "sourceScreen": "projects/5594227062750512285/screens/b99a9116b717456181fe2500f211d63b",
+      "title": "bluefrog Plumbing + Drain - Hyper-Modern West Houston Flagship",
+      "slug": "hyper-modern-west-houston-flagship",
+      "filename": "variants/hyper-modern-west-houston-flagship-b99a9116.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Xr_b9hxHMx-vNPjYM1rmOuDQzL9Twug5BAygbBgdWGMslCdHox7DgyMtbS7kzJpq6Cwf1yZwnclwT2wvtNxj1ki8LyLqHvR7CKVhMJfmWIhXjXfmIx0_qOGrCF5i3P6cUI2cy_sFQijYpc__3wMeVywnO4LMroocw0ceQQ02FTDP2wAYttiv_83pNypoPUKUr990-9mp_UrBNONFipRCxn-Bs6f-pF_r2fb8oUAjO_ejBLj-V1eti6-D0",
+      "isActive": false
+    },
+    {
+      "id": "bf4c66adda90413b8a55346e9531fd7c",
+      "sourceScreen": "projects/5594227062750512285/screens/bf4c66adda90413b8a55346e9531fd7c",
+      "title": "bluefrog Plumbing + Drain - West Houston Flagship Redesign",
+      "slug": "west-houston-flagship-redesign",
+      "filename": "variants/west-houston-flagship-redesign-bf4c66ad.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1X1cPjMTW-iLRkMddy4a90_U1o36CFqUlTC61Tq6okLRSJJRTB-MaH5PiKTltpMr6xmQG5BJUddHS_DAZQVIMksihl4ByQ9WktC5NXXZ74JZ7kF6T_ztufkfu0l89DIp4Zqp04wZq4v7kLGGmxSzD4W_MQbyCQv_tplb6e_WL6qPDOKUWdUHM1taMY9wH0b4g1Rq6Etk4LEWrt--xASsLGyrYzzJPKFCNOp_Dr7w3NyxmdjIn6lzDdeWA",
+      "isActive": false
+    },
+    {
+      "id": "f1b62e16609549feb8a9a1107c5ff00a",
+      "sourceScreen": "projects/5594227062750512285/screens/f1b62e16609549feb8a9a1107c5ff00a",
+      "title": "bluefrog Plumbing + Drain - West Houston (Premium Redesign)",
+      "slug": "west-houston-premium-redesign",
+      "filename": "variants/west-houston-premium-redesign-f1b62e16.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UsEsELkt328NJ_iaoGReRG-SgAY1bZl8F4SVO0jDaRwkiuMTzKq4l4r65Hjt9IpOcl8eSUIjta_ZTGhpHb4iZTDWxWPByAGnWqNd2Qd_XEXGwplm8Ap2hViEh9GWHHnrAXUSgSJ_flrhmVssv4Gz6UPXslMvZS3fnqMBKq71iimlFqjimhd0KsstGmPFGrCOsvQenfn2J_NV3Y6tePUEVWj0hXWUoq_Fu1wB1AJQTW6a7LRHOQwVP1ik8",
+      "isActive": false
+    },
+    {
+      "id": "f38ffe52fbe84d228ad19f1c3f3fc92c",
+      "sourceScreen": "projects/5594227062750512285/screens/f38ffe52fbe84d228ad19f1c3f3fc92c",
+      "title": "bluefrog Plumbing - Architectural Swiss Modern",
+      "slug": "architectural-swiss-modern",
+      "filename": "variants/architectural-swiss-modern-f38ffe52.html",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V2Cj1Tpe0M6wcoThIbCLt4KqnRqq6YfOVI63lacTWl0YgjjBLIRCqpjBy7uyuqMuIhAb4D3vR1Iknzox1Ht8kSgVVA8LP9CVTwUmTszlzqLCsW83Te6rAXAxMl_PN4Tkbx_X8oI-150ydyYZrp-NZVh9i-wfUsyzqDBpX2o6fu0-8OtVYtbEJBFbly4fqrLKSi6YYHIorZ4iJk-dbbMxJ_ZfW0ej6VLI2J5OQrWxX_PkcbtMh-Oktdllk",
+      "isActive": false
+    }
+  ]
+}

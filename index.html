@@ -1,0 +1,1264 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+<title>bluefrog Plumbing + Drain of West Houston</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html { scroll-behavior: smooth; }
+      body { margin:0; padding:0; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+    }
+    /* Elegant custom scrollbar on desktop */
+    @media (min-width: 1024px) {
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f1f5f9; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+      ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    }
+
+    /* MODERN ANIMATION SUITE */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+      50% { transform: translateY(-18px) rotate(4deg) scale(1.06); }
+    }
+    @keyframes floatSlowRev {
+      0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+      50% { transform: translateY(16px) rotate(-5deg) scale(0.95); }
+    }
+    @keyframes pulseSoft {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+    @keyframes shimmerSweep {
+      0% { transform: translateX(-150%) skewX(-20deg); }
+      100% { transform: translateX(250%) skewX(-20deg); }
+    }
+    @keyframes driftSoft {
+      0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+      50% { transform: translate3d(0, -14px, 0) scale(1.04); }
+    }
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    @keyframes orbitSpin {
+      0% { transform: rotate(0deg) translateY(0px); }
+      50% { transform: rotate(180deg) translateY(-8px); }
+      100% { transform: rotate(360deg) translateY(0px); }
+    }
+
+    .animate-float-slow {
+      animation: floatSlow 14s ease-in-out infinite;
+    }
+    .animate-float-reverse {
+      animation: floatSlowRev 16s ease-in-out infinite;
+    }
+    .animate-pulse-soft {
+      animation: pulseSoft 3s ease-in-out infinite;
+    }
+
+    /* Mobile Drawer Dropdown Animation */
+    @keyframes dropdownSlide {
+      from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.97);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    .animate-dropdown {
+      animation: dropdownSlide 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Luxury Toast Notification Animation */
+    @keyframes toastSlide {
+      from {
+        opacity: 0;
+        transform: translate(-50%, 20px) scale(0.94);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(1);
+      }
+    }
+    .animate-toast {
+      animation: toastSlide 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Modern Luxury Button Shimmer Effect */
+    .btn-shimmer {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .btn-shimmer::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.35) 50%,
+        rgba(255, 255, 255, 0) 70%,
+        transparent 100%
+      );
+      transform: translateX(-150%) skewX(-20deg);
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .btn-shimmer:hover::after {
+      animation: shimmerSweep 1.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Scroll Reveal Engine: Smooth Deceleration Curves */
+    .reveal-init {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-init.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.96) translateY(20px);
+      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-scale.revealed {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+
+    /* Stagger Delays */
+    .delay-75 { transition-delay: 75ms; }
+    .delay-150 { transition-delay: 150ms; }
+    .delay-225 { transition-delay: 225ms; }
+    .delay-300 { transition-delay: 300ms; }
+    .delay-375 { transition-delay: 375ms; }
+    .delay-450 { transition-delay: 450ms; }
+
+    /* Interactive Elevation & Tactile Physics */
+    .hover-card-lift {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+      will-change: transform, box-shadow;
+    }
+    .hover-card-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -10px rgba(0, 114, 206, 0.12), 0 10px 20px -8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Active Nav Link Styling */
+    .nav-item-active {
+      background-color: #ffffff !important;
+      color: #0072ce !important;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+    }
+
+    /* Floating Pill Header Scrolled State */
+    .header-scrolled {
+      box-shadow: 0 16px 40px -12px rgba(0, 35, 70, 0.18) !important;
+      border-color: rgba(0, 114, 206, 0.25) !important;
+    }
+
+    @media (max-width: 1024px) {
+      #floating-header {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+        gap: 0.85rem;
+      }
+
+      .header-actions {
+        gap: 0.5rem;
+      }
+
+      .header-actions > a:first-child {
+        padding-left: 0.45rem;
+        padding-right: 0.45rem;
+      }
+
+      .header-actions > a:first-child span:last-child {
+        font-size: 0.72rem;
+      }
+
+      .ambient-orb,
+      .orbit-ring {
+        display: none !important;
+      }
+
+      .nav-item {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+
+      #book-dispatch form .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      #floating-header {
+        border-radius: 1.25rem;
+        padding: 0.55rem 0.65rem;
+      }
+
+      .header-actions {
+        gap: 0.4rem;
+      }
+
+      .header-actions > a:first-child {
+        max-width: 132px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .header-actions > a:first-child .phone-number {
+        display: none;
+      }
+
+      .header-actions > a:first-child span:last-child {
+        font-size: 0.68rem;
+      }
+
+      .header-actions > a:last-child {
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+      }
+
+      .header-actions > a:first-child {
+        display: none !important;
+      }
+
+      .ambient-orb {
+        width: 16rem !important;
+        height: 16rem !important;
+        right: -4rem !important;
+        left: auto !important;
+      }
+
+      .hero-cta-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero-cta-group > a {
+        width: 100%;
+      }
+
+      .hero-trust-bar {
+        gap: 0.5rem;
+        justify-content: flex-start;
+        font-size: 0.68rem;
+        flex-wrap: wrap;
+      }
+
+      .hero-trust-bar > span {
+        display: none;
+      }
+
+      .quick-scheduler form {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-areas-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .site-footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-scheduler {
+        margin-top: 1rem;
+      }
+
+      .site-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .scroll-progress-bar {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 3px;
+      width: 0%;
+      z-index: 80;
+      background: linear-gradient(90deg, #0072ce 0%, #78be20 52%, #0059a4 100%);
+      background-size: 200% 100%;
+      box-shadow: 0 0 18px rgba(0, 114, 206, 0.45);
+      animation: gradientFlow 6s ease-in-out infinite alternate;
+    }
+
+    .ambient-orb {
+      animation: driftSoft 18s ease-in-out infinite;
+    }
+
+    .orbit-ring {
+      animation: orbitSpin 18s linear infinite;
+      transform-origin: center;
+    }
+
+    .tilt-card {
+      transform-style: preserve-3d;
+      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    .tilt-card:hover {
+      box-shadow: 0 22px 45px -18px rgba(0, 35, 70, 0.18);
+    }
+
+    /* Respect reduced-motion preferences */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: "#0072ce",
+              darkblue: "#0059a4",
+              green: "#78be20",
+              darkgreen: "#006e2d",
+              cream: "#faf9f6",
+              nordic: "#f0f4f9"
+            },
+            surface: "#f8faff",
+            "surface-card": "#ffffff",
+            "on-surface": "#0b1c30",
+            "on-surface-variant": "#4d5b6e",
+            primary: "#0072ce",
+            secondary: "#78be20",
+            "secondary-dark": "#006e2d"
+          },
+          borderRadius: {
+            "3xl": "1.75rem",
+            "4xl": "2.25rem"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#f8fafd] text-[#0b1c30] antialiased selection:bg-[#78be20]/20 selection:text-[#0059a4]">
+<div class="scroll-progress-bar" aria-hidden="true"></div>
+<!-- FLOATING PILL HEADER -->
+<div class="fixed top-4 sm:top-5 left-0 right-0 z-50 px-3 sm:px-6 pointer-events-none">
+<header id="floating-header" class="pointer-events-auto max-w-7xl 2xl:max-w-[1400px] mx-auto w-full bg-white/95 backdrop-blur-xl border border-slate-200/80 shadow-[0_12px_40px_-15px_rgba(0,35,70,0.12)] rounded-full px-3.5 sm:px-5 lg:px-6 xl:px-8 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-3 lg:gap-4 xl:gap-6 transition-all duration-300">
+<!-- Logo brand group -->
+<a class="flex items-center gap-2 sm:gap-3 shrink-0 group" href="#">
+<img alt="bluefrog Plumbing + Drain" class="h-7 sm:h-8 xl:h-9 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105" src="images/logo.png">
+</a>
+<!-- Responsive Rounded Nav Items (with Scroll-Spy support) -->
+<nav class="hidden lg:flex items-center gap-0.5 xl:gap-1 bg-slate-100/90 p-1 rounded-full border border-slate-200/60 text-xs xl:text-sm font-semibold text-slate-600 shrink">
+<a class="nav-item px-2.5 xl:px-3 py-1.5 rounded-full hover:text-[#0072ce] hover:bg-white/70 transition-all duration-200" href="#services">Services</a>
+<a class="nav-item px-2.5 xl:px-3 py-1.5 rounded-full hover:text-[#0072ce] hover:bg-white/70 transition-all duration-200" href="#the-standard">The Standard</a>
+<a class="nav-item px-2.5 xl:px-3 py-1.5 rounded-full hover:text-[#0072ce] hover:bg-white/70 transition-all duration-200" href="#vip-membership">VIP Membership</a>
+<a class="nav-item px-2.5 xl:px-3 py-1.5 rounded-full hover:text-[#0072ce] hover:bg-white/70 transition-all duration-200" href="#reviews">Reviews</a>
+<a class="nav-item px-2.5 xl:px-3 py-1.5 rounded-full hover:text-[#0072ce] hover:bg-white/70 transition-all duration-200" href="#service-areas">Areas</a>
+</nav>
+<!-- Action Cluster: Live Phone & Responsive CTA Button -->
+<div class="header-actions flex items-center gap-1.5 sm:gap-2.5 xl:gap-3 shrink-0">
+<a class="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-2.5 xl:px-3 py-1.5 rounded-full hover:bg-slate-100 text-slate-800 text-xs xl:text-sm font-bold tracking-tight transition-all duration-200 shrink-0" href="tel:8326503706">
+<span class="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#78be20] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-[#78be20]"></span>
+</span>
+<span class="hidden xl:inline text-slate-500 font-medium text-xs">24/7 Hotline:</span>
+<span class="phone-number">(832) 650-3706</span>
+</a>
+<a class="btn-shimmer inline-flex items-center gap-1 sm:gap-1.5 bg-[#78be20] hover:bg-[#68a818] text-white font-bold text-xs xl:text-sm px-3 sm:px-3.5 xl:px-4 py-1.5 sm:py-2 xl:py-2.5 rounded-full shadow-[0_4px_16px_rgba(120,190,32,0.35)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shrink-0" href="#book-dispatch">
+<span class="material-symbols-outlined text-[16px] sm:text-[18px]">calendar_today</span>
+<span>Schedule Tech</span>
+</a>
+<!-- Mobile / Split Desktop Menu Toggle Button -->
+<button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="lg:hidden p-1.5 sm:p-2 rounded-full hover:bg-slate-100 text-slate-700 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[22px]">menu</span>
+</button>
+</div>
+</header>
+<!-- Mobile / Split-Screen Desktop Menu Drawer -->
+<div id="mobile-menu" class="hidden pointer-events-auto max-w-md mx-auto mt-2 bg-white/95 backdrop-blur-xl border border-slate-200/90 shadow-2xl rounded-3xl p-5 transition-all duration-300">
+<div class="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+<a class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-blue-50 hover:text-[#0072ce] flex items-center justify-between transition-colors" href="#services">
+<span>Services</span>
+<span class="material-symbols-outlined text-sm text-slate-400">arrow_forward</span>
+</a>
+<a class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-blue-50 hover:text-[#0072ce] flex items-center justify-between transition-colors" href="#the-standard">
+<span>The Standard</span>
+<span class="material-symbols-outlined text-sm text-slate-400">arrow_forward</span>
+</a>
+<a class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-blue-50 hover:text-[#0072ce] flex items-center justify-between transition-colors" href="#vip-membership">
+<span>VIP Membership</span>
+<span class="material-symbols-outlined text-sm text-slate-400">arrow_forward</span>
+</a>
+<a class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-blue-50 hover:text-[#0072ce] flex items-center justify-between transition-colors" href="#reviews">
+<span>Reviews</span>
+<span class="material-symbols-outlined text-sm text-slate-400">arrow_forward</span>
+</a>
+<a class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-blue-50 hover:text-[#0072ce] flex items-center justify-between transition-colors" href="#service-areas">
+<span>Service Areas</span>
+<span class="material-symbols-outlined text-sm text-slate-400">arrow_forward</span>
+</a>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between mt-1">
+<a class="text-xs font-bold text-slate-700 flex items-center gap-1.5 hover:text-[#0072ce]" href="tel:8326503706">
+<span class="material-symbols-outlined text-[#78be20] text-base">call</span>
+<span>(832) 650-3706</span>
+</a>
+<a class="mobile-nav-link btn-shimmer text-xs font-bold text-white bg-[#0072ce] hover:bg-[#0059a4] px-3.5 py-1.5 rounded-full transition-colors" href="#book-dispatch">
+<span>Dispatch Tech</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<main class="w-full pt-28 sm:pt-32">
+<!-- WARM NORDIC HERO SECTION -->
+<section class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-10 mb-16">
+<div class="relative bg-gradient-to-br from-[#eff6ff] via-[#f8fafc] to-[#f0fdf4] border border-blue-100/60 rounded-3xl lg:rounded-4xl p-6 sm:p-10 lg:p-12 xl:p-14 2xl:p-16 overflow-hidden shadow-[0_20px_50px_-25px_rgba(0,114,206,0.12)]">
+<!-- Modern floating ambient glow spheres -->
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-[#0072ce]/15 rounded-full blur-3xl pointer-events-none ambient-orb" style="top:-8rem; right:-4rem; width:16rem; height:16rem;"></div>
+<div class="absolute -bottom-32 -left-32 w-96 h-96 bg-[#78be20]/20 rounded-full blur-3xl pointer-events-none ambient-orb" style="bottom:-8rem; left:-4rem; width:16rem; height:16rem;"></div>
+<div class="absolute right-10 top-1/3 hidden lg:block w-32 h-32 rounded-full border border-[#0072ce]/25 orbit-ring"></div>
+<div class="absolute left-10 bottom-12 hidden lg:block w-24 h-24 rounded-full border border-[#78be20]/30 orbit-ring"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
+<!-- Left: Warm Contemporary Typography & Quick Perks -->
+<div class="lg:col-span-7 xl:col-span-7 flex flex-col items-start">
+<div class="reveal-init inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-blue-200/60 shadow-sm backdrop-blur-sm text-[#0059a4] text-xs font-bold uppercase tracking-wider mb-6">
+<span class="flex h-2 w-2 rounded-full bg-[#78be20] animate-pulse-soft"></span>
+Contemporary Master Plumbing Care
+</div>
+<h1 class="reveal-init delay-75 text-3xl sm:text-4xl md:text-5xl lg:text-[44px] xl:text-[54px] 2xl:text-[58px] font-extrabold text-[#0b1c30] tracking-tight leading-[1.15] xl:leading-[1.12] mb-5">
+West Houston’s most trusted plumbers, <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0072ce] via-[#0059a4] to-[#0072ce] bg-[length:200%_auto] animate-pulse-soft">on call 24/7.</span>
+</h1>
+<p class="reveal-init delay-150 text-base sm:text-lg xl:text-xl text-slate-600 leading-relaxed max-w-xl xl:max-w-2xl mb-8">
+Experience the fresh bluefrog standard: immaculate spotless cleanliness, guaranteed upfront flat pricing, and master-certified craftsmanship. Zero diagnostic fees with approved repair.
+</p>
+<!-- Dispatch CTA Buttons -->
+<div class="hero-cta-group reveal-init delay-225 flex flex-wrap sm:flex-nowrap items-center gap-3 w-full sm:w-auto mb-8">
+<a class="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#78be20] hover:bg-[#68a818] text-white font-bold text-sm sm:text-base px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl shadow-lg shadow-[#78be20]/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#78be20]/35 active:scale-[0.98]" href="#book-dispatch">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>45-Min Priority Dispatch</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white hover:bg-slate-50 text-[#0b1c30] border border-slate-200/80 font-bold text-sm sm:text-base px-5 sm:px-6 py-3 sm:py-3.5 rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md active:scale-[0.98]" href="tel:8326503706">
+<span class="material-symbols-outlined text-[#0072ce] text-[20px]">call</span>
+<span>(832) 650-3706</span>
+</a>
+</div>
+<!-- Trust Bar with Badge Icons -->
+<div class="hero-trust-bar reveal-init delay-300 flex flex-wrap items-center gap-3 sm:gap-4 text-xs font-semibold text-slate-600 bg-white/80 backdrop-blur-sm px-4 py-2.5 rounded-xl border border-slate-200/70 shadow-sm">
+<div class="flex items-center gap-1.5 text-slate-800">
+<span class="material-symbols-outlined text-[#0072ce] text-[18px]">verified</span>
+<span>Google Guaranteed</span>
+</div>
+<span class="text-slate-300">|</span>
+<div class="flex items-center gap-1.5 text-slate-800">
+<span class="material-symbols-outlined text-[#78be20] text-[18px]">thumb_up</span>
+<span>BBB A+ Rating</span>
+</div>
+<span class="text-slate-300">|</span>
+<span class="text-[#0059a4] font-bold">TX MPL #17531</span>
+</div>
+</div>
+<!-- Right: Team Card with Floating Interactive Quick-Scheduler -->
+<div class="lg:col-span-5 xl:col-span-5 relative mt-6 lg:mt-0">
+<!-- Photo Card with Glowing Badge -->
+<div class="reveal-scale delay-150 hover-card-lift tilt-card relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] lg:aspect-[4/3] xl:aspect-[16/11] bg-slate-100 group" data-tilt>
+<img alt="bluefrog Plumbing West Houston Master Technicians" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="images/team-houston.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+<!-- Glowing soft badge -->
+<div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-2 border border-slate-100">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="text-xs font-extrabold text-[#0b1c30]">4.9 ★</span>
+<span class="text-[11px] text-slate-500 font-medium">(480+ Reviews)</span>
+</div>
+</div>
+<!-- Floating Interactive Quick-Scheduler Widget (Desktop Responsive Layout) -->
+<div class="quick-scheduler reveal-init delay-225 hover-card-lift mt-4 sm:-mt-8 relative z-20 sm:mx-4 bg-white/95 backdrop-blur-xl border border-slate-200/80 rounded-2xl p-4 sm:p-5 xl:p-6 shadow-[0_15px_35px_-10px_rgba(0,35,70,0.18)]">
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+<div class="flex items-center gap-2">
+<span class="flex h-2.5 w-2.5 rounded-full bg-[#78be20] animate-pulse-soft"></span>
+<span class="text-xs font-bold uppercase tracking-wider text-slate-800">Fast Tech Match</span>
+</div>
+<span class="text-[11px] font-bold text-[#0072ce] bg-blue-50 px-2.5 py-0.5 rounded-full">Available Now</span>
+</div>
+<form class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-2 sm:gap-2.5" onsubmit="event.preventDefault(); window.location.href='#book-dispatch';">
+<select class="w-full bg-slate-50 hover:bg-slate-100 text-slate-800 text-xs font-semibold rounded-xl border border-slate-200 px-3 py-2.5 xl:py-3 focus:ring-2 focus:ring-[#0072ce] focus:outline-none transition-all cursor-pointer">
+<option>Drain &amp; Clog</option>
+<option>Water Heater</option>
+<option>Burst Pipe / Leak</option>
+<option>Repiping / Fixture</option>
+</select>
+<input class="w-full bg-slate-50 hover:bg-slate-100 focus:bg-white text-slate-800 text-xs font-semibold rounded-xl border border-slate-200 px-3 py-2.5 xl:py-3 focus:ring-2 focus:ring-[#0072ce] focus:outline-none transition-all" placeholder="ZIP Code (e.g. 77079)" type="text">
+<button class="btn-shimmer w-full bg-[#0072ce] hover:bg-[#0059a4] text-white text-xs font-bold rounded-xl py-2.5 xl:py-3 px-3 flex items-center justify-center gap-1.5 transition-all shadow-sm hover:shadow-md active:scale-[0.98]" type="submit">
+<span>Dispatch Tech</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- METRICS RIBBON: PILL-SHAPED STAT CARDS (WITH LIVE COUNT-UP ANIMATION) -->
+<section class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-10 mb-20">
+<div class="stats-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-6">
+<div class="reveal-init delay-75 hover-card-lift bg-white border border-slate-200/80 rounded-2xl p-5 xl:p-6 shadow-sm hover:shadow-md flex items-center gap-4">
+<div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-blue-50 text-[#0072ce] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px] xl:text-[28px]">schedule</span>
+</div>
+<div>
+<div class="text-2xl xl:text-3xl font-extrabold text-[#0b1c30] tracking-tight stat-counter" data-target="45" data-suffix=" Min">45 Min</div>
+<div class="text-xs xl:text-sm text-slate-500 font-medium">Avg Priority Arrival Window</div>
+</div>
+</div>
+<div class="reveal-init delay-150 hover-card-lift bg-white border border-slate-200/80 rounded-2xl p-5 xl:p-6 shadow-sm hover:shadow-md flex items-center gap-4">
+<div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-emerald-50 text-[#78be20] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px] xl:text-[28px]">price_check</span>
+</div>
+<div>
+<div class="text-2xl xl:text-3xl font-extrabold text-[#0b1c30] tracking-tight stat-counter" data-target="100" data-suffix="%">100%</div>
+<div class="text-xs xl:text-sm text-slate-500 font-medium">Guaranteed Upfront Flat Rates</div>
+</div>
+</div>
+<div class="reveal-init delay-225 hover-card-lift bg-white border border-slate-200/80 rounded-2xl p-5 xl:p-6 shadow-sm hover:shadow-md flex items-center gap-4">
+<div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-amber-50 text-amber-500 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px] xl:text-[28px]">reviews</span>
+</div>
+<div>
+<div class="text-2xl xl:text-3xl font-extrabold text-[#0b1c30] tracking-tight stat-counter" data-target="480" data-suffix="+">480+</div>
+<div class="text-xs xl:text-sm text-slate-500 font-medium">Verified 5-Star Houston Reviews</div>
+</div>
+</div>
+<div class="reveal-init delay-300 hover-card-lift bg-white border border-slate-200/80 rounded-2xl p-5 xl:p-6 shadow-sm hover:shadow-md flex items-center gap-4">
+<div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px] xl:text-[28px]">support_agent</span>
+</div>
+<div>
+<div class="text-2xl xl:text-3xl font-extrabold text-[#0b1c30] tracking-tight">24/7/365</div>
+<div class="text-xs xl:text-sm text-slate-500 font-medium">Live West Houston Master Team</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICE COLLECTION: SOFT ROUNDED CARDS WITH GENEROUS INTERNAL PADDING -->
+<section class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-10 mb-24" id="services">
+<div class="reveal-init flex flex-col md:flex-row md:items-end justify-between mb-10 xl:mb-12 gap-4">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-[#0072ce] mb-2 block">Specialized Crafts</span>
+<h2 class="text-3xl sm:text-4xl xl:text-5xl font-extrabold text-[#0b1c30] tracking-tight">Comprehensive Plumbing &amp; Drain Care</h2>
+</div>
+<p class="text-sm sm:text-base xl:text-lg text-slate-500 max-w-md xl:max-w-lg">
+Surgically precise solutions utilizing non-invasive diagnostic tools and industry-standard warranties for West Houston properties.
+</p>
+</div>
+<div class="service-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+<!-- Service Card 1 -->
+<div class="reveal-init delay-75 hover-card-lift group bg-white rounded-3xl p-5 xl:p-6 border border-slate-200/70 shadow-sm hover:shadow-xl hover:border-blue-200 flex flex-col justify-between">
+<div>
+<div class="rounded-2xl overflow-hidden aspect-[16/10] mb-5 bg-slate-100">
+<img alt="Hydro-jetting high velocity drain scouring" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108" src="images/hydro-jetting.jpg">
+</div>
+<div class="inline-block bg-blue-50 text-[#0072ce] text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-2">Drain &amp; Sewer</div>
+<h3 class="text-xl font-bold text-[#0b1c30] mb-2">Hydro-Jetting &amp; Drain Clearing</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+4,000 PSI high-velocity scouring completely cleans tree roots, grease scale, and sediment buildup. Includes full video confirmation.
+</p>
+</div>
+<a class="mt-6 inline-flex items-center gap-1.5 text-xs font-bold text-[#0072ce] hover:text-[#0059a4] group-hover:translate-x-1.5 transition-transform duration-200" href="#book-dispatch">
+<span>Explore Drain Solutions</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="reveal-init delay-150 hover-card-lift group bg-white rounded-3xl p-5 xl:p-6 border border-slate-200/70 shadow-sm hover:shadow-xl hover:border-blue-200 flex flex-col justify-between">
+<div>
+<div class="rounded-2xl overflow-hidden aspect-[16/10] mb-5 bg-slate-100">
+<img alt="Tankless water heater installation and softeners" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108" src="images/water-softener.jpg">
+</div>
+<div class="inline-block bg-emerald-50 text-[#78be20] text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-2">Water Quality</div>
+<h3 class="text-xl font-bold text-[#0b1c30] mb-2">Tankless Water Heaters &amp; Softening</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+Continuous on-demand hot water coupled with high-efficiency water softener units designed explicitly to neutralize harsh Houston mineral scaling.
+</p>
+</div>
+<a class="mt-6 inline-flex items-center gap-1.5 text-xs font-bold text-[#0072ce] hover:text-[#0059a4] group-hover:translate-x-1.5 transition-transform duration-200" href="#book-dispatch">
+<span>Water Heating Systems</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="reveal-init delay-225 hover-card-lift group bg-white rounded-3xl p-5 xl:p-6 border border-slate-200/70 shadow-sm hover:shadow-xl hover:border-blue-200 flex flex-col justify-between">
+<div>
+<div class="rounded-2xl overflow-hidden aspect-[16/10] mb-5 bg-slate-100">
+<img alt="Smart leak detection and architectural fixtures" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108" src="images/smart-faucets.jpg">
+</div>
+<div class="inline-block bg-purple-50 text-purple-600 text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-2">Leak Detection</div>
+<h3 class="text-xl font-bold text-[#0b1c30] mb-2">Smart Leak Detection &amp; Fixtures</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+Acoustic slab leak diagnostics, automated emergency shutoff valves, and high-end fixture repairs preserving the architectural aesthetics of your home.
+</p>
+</div>
+<a class="mt-6 inline-flex items-center gap-1.5 text-xs font-bold text-[#0072ce] hover:text-[#0059a4] group-hover:translate-x-1.5 transition-transform duration-200" href="#book-dispatch">
+<span>Leak Detection Protocols</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 4 -->
+<div class="reveal-init delay-75 hover-card-lift group bg-white rounded-3xl p-6 sm:p-7 xl:p-8 border border-slate-200/70 shadow-sm hover:shadow-xl hover:border-blue-200 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-blue-50 text-[#0072ce] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-[26px] xl:text-[28px]">plumbing</span>
+</div>
+<div class="inline-block bg-blue-50 text-[#0072ce] text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-2">Piping Infrastructure</div>
+<h3 class="text-xl font-bold text-[#0b1c30] mb-2">Whole-Home Repiping &amp; Upgrades</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+Permanent conversion from deteriorated galvanized or defective polybutylene to Uponor PEX-a. Backed by full municipal permitting and 25-year structural warranties.
+</p>
+</div>
+<a class="mt-6 inline-flex items-center gap-1.5 text-xs font-bold text-[#0072ce] hover:text-[#0059a4] group-hover:translate-x-1.5 transition-transform duration-200" href="#book-dispatch">
+<span>Repiping Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 5 -->
+<div class="reveal-init delay-150 hover-card-lift group bg-white rounded-3xl p-6 sm:p-7 xl:p-8 border border-slate-200/70 shadow-sm hover:shadow-xl hover:border-blue-200 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-emerald-50 text-[#78be20] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-[26px] xl:text-[28px]">videocam</span>
+</div>
+<div class="inline-block bg-emerald-50 text-[#78be20] text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-2">Non-Invasive Diagnostic</div>
+<h3 class="text-xl font-bold text-[#0b1c30] mb-2">Sewer Line Camera Inspections</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+Subterranean high-definition fiber-optic camera units identify pipe belly offsets, root penetrations, and micro-cracks without trenching your lawn or driveways.
+</p>
+</div>
+<a class="mt-6 inline-flex items-center gap-1.5 text-xs font-bold text-[#0072ce] hover:text-[#0059a4] group-hover:translate-x-1.5 transition-transform duration-200" href="#book-dispatch">
+<span>Request Video Inspection</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 6 (Standout 24/7 Dispatch) -->
+<div class="reveal-init delay-225 hover-card-lift bg-gradient-to-br from-[#0b1c30] to-[#122844] rounded-3xl p-6 sm:p-7 xl:p-8 text-white shadow-xl flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#78be20] text-white text-[11px] font-extrabold uppercase tracking-wider mb-4">
+<span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+Emergency Dispatch
+</div>
+<h3 class="text-2xl font-bold mb-3 text-white">24/7 Emergency Plumber Response</h3>
+<p class="text-sm text-slate-300 leading-relaxed mb-6">
+Burst pipes, sewage overflows, and gas line leaks can’t wait until tomorrow. Real live Houston master dispatcher picks up in under 60 seconds.
+</p>
+</div>
+<div class="relative z-10 pt-4">
+<a class="btn-shimmer w-full inline-flex items-center justify-center gap-2 bg-[#78be20] hover:bg-[#68a818] text-white font-bold text-sm py-3.5 px-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]" href="tel:8326503706">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Call Now: (832) 650-3706</span>
+</a>
+</div>
+<div class="absolute -right-8 -bottom-8 w-48 h-48 bg-[#0072ce]/20 rounded-full blur-2xl pointer-events-none animate-float-slow"></div>
+</div>
+</div>
+</section>
+<!-- WHY HOMEOWNERS TRUST US: LESS MESS. LESS STRESS. -->
+<section class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-10 mb-24" id="the-standard">
+<div class="reveal-scale bg-[#f0f4f9] border border-slate-200/60 rounded-3xl lg:rounded-4xl p-6 sm:p-10 lg:p-12 xl:p-16 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center">
+<div class="reveal-init lg:col-span-6 xl:col-span-6">
+<span class="text-xs font-bold uppercase tracking-widest text-[#78be20] mb-3 block">The Bluefrog Difference</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0b1c30] tracking-tight mb-5">
+Less Mess. Less Stress. Every single call.
+</h2>
+<p class="text-base text-slate-600 mb-5 leading-relaxed">
+We treat your home like a sacred space. Our technicians arrive with sanitized floor runners, slip-on protective booties, and heavy-duty drop cloths.
+</p>
+<p class="text-sm text-slate-600 mb-7 leading-relaxed">
+We never use random subcontracted labor. Every bluefrog technician is an in-house, background-checked W2 professional trained in hospitality and master-level diagnostics.
+</p>
+<div class="grid grid-cols-3 gap-3 sm:gap-4 pt-4 border-t border-slate-200">
+<div>
+<div class="text-2xl sm:text-3xl font-extrabold text-[#0072ce]">98%</div>
+<div class="text-xs text-slate-500 font-medium">First-Visit Resolution</div>
+</div>
+<div>
+<div class="text-2xl sm:text-3xl font-extrabold text-[#78be20]">1,500+</div>
+<div class="text-xs text-slate-500 font-medium">OEM Parts in Trucks</div>
+</div>
+<div>
+<div class="text-2xl sm:text-3xl font-extrabold text-[#0b1c30]">$0</div>
+<div class="text-xs text-slate-500 font-medium">Diagnostic w/ Repair</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 xl:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 xl:gap-5">
+<div class="reveal-init delay-75 hover-card-lift bg-white p-5 xl:p-6 rounded-2xl shadow-sm border border-slate-200/60">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0072ce] flex items-center justify-center mb-3">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<h4 class="text-base font-bold text-[#0b1c30] mb-1">Upfront Flat Pricing</h4>
+<p class="text-xs xl:text-sm text-slate-500 leading-relaxed">
+Clear transparent pricing presented upfront before any work starts. No sneaky hourly add-ons.
+</p>
+</div>
+<div class="reveal-init delay-150 hover-card-lift bg-white p-5 xl:p-6 rounded-2xl shadow-sm border border-slate-200/60">
+<div class="w-10 h-10 rounded-xl bg-emerald-50 text-[#78be20] flex items-center justify-center mb-3">
+<span class="material-symbols-outlined">clean_hands</span>
+</div>
+<h4 class="text-base font-bold text-[#0b1c30] mb-1">Zero-Mess Guarantee</h4>
+<p class="text-xs xl:text-sm text-slate-500 leading-relaxed">
+Protective shoe booties, floor protection, and sterile cleanup leaves your home spotless.
+</p>
+</div>
+<div class="reveal-init delay-225 hover-card-lift bg-white p-5 xl:p-6 rounded-2xl shadow-sm border border-slate-200/60">
+<div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h4 class="text-base font-bold text-[#0b1c30] mb-1">Master Plumbers</h4>
+<p class="text-xs xl:text-sm text-slate-500 leading-relaxed">
+Direct supervision under TX MPL #17531 with total compliance to West Houston building codes.
+</p>
+</div>
+<div class="reveal-init delay-300 hover-card-lift bg-white p-5 xl:p-6 rounded-2xl shadow-sm border border-slate-200/60">
+<div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<h4 class="text-base font-bold text-[#0b1c30] mb-1">Live Local Dispatch</h4>
+<p class="text-xs xl:text-sm text-slate-500 leading-relaxed">
+Never an automated robot or out-of-state call center. Talk directly to Houston dispatchers.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- VIP MEMBERSHIP: BFPAD PROTECTION PROGRAM (PREMIUM CARD PASS DESIGN) -->
+<section class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-10 mb-24" id="vip-membership">
+<div class="reveal-scale relative bg-gradient-to-br from-[#0b1c30] via-[#11243e] to-[#071322] rounded-3xl lg:rounded-4xl p-6 sm:p-10 lg:p-12 xl:p-16 text-white shadow-2xl overflow-hidden border border-slate-800">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-center">
+<div class="reveal-init lg:col-span-7 xl:col-span-7">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#78be20]/20 text-[#78be20] text-xs font-bold uppercase tracking-wider mb-4 border border-[#78be20]/30">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+Homeowner Peace of Mind Pass
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4 tracking-tight">
+bfpad Proactive Protection Program™
+</h2>
+<p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
+Protect your home against hidden leaks and untimely fixture failures before water damage escalates. Designed for West Houston luxury residences.
+</p>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#78be20] text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span class="text-sm text-slate-200"><strong class="text-white">Priority VIP Dispatch</strong> — Guaranteed fast-track front of line scheduling during freezes or high-call storms.</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#78be20] text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span class="text-sm text-slate-200"><strong class="text-white">Free Annual 50-Point Audit</strong> — Comprehensive system inspection including full water heater flush and descaling check.</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#78be20] text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span class="text-sm text-slate-200"><strong class="text-white">15% Lifetime Member Savings</strong> — Instant savings across all plumbing labor, fixtures, and diagnostic services.</span>
+</div>
+</div>
+</div>
+<!-- Membership Pass Card -->
+<div class="lg:col-span-5 xl:col-span-5 flex justify-center lg:justify-end">
+<div class="reveal-scale delay-150 hover-card-lift w-full max-w-sm xl:max-w-md bg-white rounded-3xl p-6 sm:p-8 xl:p-10 text-[#0b1c30] shadow-2xl relative border border-slate-100 flex flex-col items-center text-center">
+<span class="text-[11px] font-extrabold uppercase tracking-widest text-[#0072ce] bg-blue-50 px-3 py-1 rounded-full mb-3">All-Access Pass</span>
+<div class="flex items-baseline gap-1 my-2">
+<span class="text-4xl sm:text-5xl font-extrabold text-[#0b1c30] tracking-tight">$14.95</span>
+<span class="text-sm font-semibold text-slate-500">/ month</span>
+</div>
+<p class="text-xs text-slate-500 mb-6">No lock-in contract. Cancel online anytime with ease.</p>
+<a class="btn-shimmer w-full bg-[#78be20] hover:bg-[#68a818] text-white font-bold text-sm py-3.5 rounded-2xl shadow-md transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]" href="#book-dispatch">
+Enroll My Home Now
+</a>
+<span class="text-[11px] text-slate-400 font-medium mt-3 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">lock</span>
+Instant active protection coverage
+</span>
+</div>
+</div>
+</div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#0072ce]/20 rounded-full blur-3xl pointer-events-none animate-float-slow"></div>
+</div>
+</section>
+<!-- CUSTOMER REVIEWS: CAROUSEL-STYLE CARDS -->
+<section class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-10 mb-24" id="reviews">
+<div class="reveal-init flex flex-col md:flex-row md:items-end justify-between mb-10 xl:mb-12 gap-4">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-[#0072ce] mb-2 block">Neighborhood Stories</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0b1c30] tracking-tight">What Houston Homeowners Say</h2>
+</div>
+<div class="flex items-center gap-3 bg-white px-4 py-2 rounded-2xl border border-slate-200/80 shadow-sm self-start md:self-auto hover-card-lift">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="text-sm font-extrabold text-slate-800">4.9 / 5.0</span>
+<span class="text-xs text-slate-400">(480+ Google Reviews)</span>
+</div>
+</div>
+<div class="review-grid grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-8">
+<!-- Review 1 -->
+<div class="reveal-init delay-75 hover-card-lift bg-white rounded-3xl p-6 sm:p-7 xl:p-8 border border-slate-200/70 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="text-sm text-slate-700 leading-relaxed italic mb-6">
+"Bluefrog was quick to call and scheduled an appointment within the hour. I had a sprinkler leak that led to my water being shut off. They explained their estimate clearly and replaced the line spotless. Excellent team!"
+</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-sm font-bold text-[#0b1c30] block">Annie Q.</span>
+<span class="text-xs text-slate-400">Memorial City, Houston</span>
+</div>
+<span class="material-symbols-outlined text-[#78be20] text-[20px]">verified</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="reveal-init delay-150 hover-card-lift bg-white rounded-3xl p-6 sm:p-7 xl:p-8 border border-slate-200/70 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="text-sm text-slate-700 leading-relaxed italic mb-6">
+"Service technician showed up exactly on time and quickly pinpointed our line blockage. Gave us a flat quote and had it clear in under an hour without dirtying the tiles. Highly recommend Bluefrog!"
+</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-sm font-bold text-[#0b1c30] block">Tom V.</span>
+<span class="text-xs text-slate-400">Cinco Ranch &amp; Katy</span>
+</div>
+<span class="material-symbols-outlined text-[#78be20] text-[20px]">verified</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="reveal-init delay-225 hover-card-lift bg-white rounded-3xl p-6 sm:p-7 xl:p-8 border border-slate-200/70 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="text-sm text-slate-700 leading-relaxed italic mb-6">
+"Brent and Andrew arrived fast when our holiday water pressure crashed. Saved our celebration completely! Respectful, professional, and wore booties the entire time. A true 5-star experience."
+</p>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-sm font-bold text-[#0b1c30] block">Samantha K.</span>
+<span class="text-xs text-slate-400">Spring Branch West</span>
+</div>
+<span class="material-symbols-outlined text-[#78be20] text-[20px]">verified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 16 SERVICE NEIGHBORHOODS MATRIX (DESKTOP OPTIMIZED RESPONSIVE GRID) -->
+<section class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-10 mb-24" id="service-areas">
+<div class="reveal-init text-center max-w-2xl mx-auto mb-10">
+<span class="text-xs font-bold uppercase tracking-widest text-[#0072ce] mb-2 block">Houston Territory</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0b1c30] tracking-tight mb-3">16 West Houston Service Corridors</h2>
+<p class="text-sm sm:text-base text-slate-500">
+Equipped mobile service vans positioned across Houston for guaranteed 45-minute response windows.
+</p>
+</div>
+<!-- Responsive Grid: 2 cols on mobile, 4 cols on tablet and compact desktop (1024px-1279px), 8 cols on wide desktop (1280px+) -->
+<div class="service-areas-grid reveal-init delay-150 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-8 gap-2.5 sm:gap-3 xl:gap-3.5 mb-8">
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">West Houston</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Katy</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Memorial City</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Cinco Ranch</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Sugar Land</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Spring Branch</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Greater Heights</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Rice Village</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">River Oaks</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">West University</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Pearland</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Friendswood</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">League City</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Clear Lake</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Missouri City</div>
+<div class="bg-white hover:bg-[#0072ce] hover:text-white hover:border-[#0072ce] hover:-translate-y-1 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-slate-200/80 rounded-xl p-3 xl:p-3.5 text-center text-xs xl:text-[13px] font-bold text-slate-700 shadow-sm cursor-default select-none">Bellaire</div>
+</div>
+<div class="reveal-init delay-225 flex items-center justify-center gap-2 text-slate-500 text-xs sm:text-sm">
+<span class="material-symbols-outlined text-[#0072ce] text-[18px]">place</span>
+<span>Headquarters: 10645 Richmond Ave., Ste 140, Houston, TX 77042</span>
+</div>
+</section>
+<!-- SLEEK DISPATCH RESERVATION FORM -->
+<section class="max-w-4xl xl:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" id="book-dispatch">
+<div class="reveal-scale hover-card-lift bg-white border border-slate-200/80 rounded-3xl lg:rounded-4xl p-6 sm:p-10 lg:p-12 xl:p-14 shadow-xl shadow-blue-900/5">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-slate-100 gap-4">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-[#78be20] block mb-1">Direct Master Queue</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-[#0b1c30]">Schedule Priority Service</h2>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 text-[#006e2d] text-xs font-bold">
+<span class="w-2 h-2 rounded-full bg-[#78be20] animate-pulse-soft"></span>
+<span>$0 Diagnostic Fee with Repair</span>
+</div>
+</div>
+<form class="space-y-5" onsubmit="event.preventDefault(); alert('Priority service request logged. A master dispatcher will call in under 5 minutes to confirm timing.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 xl:gap-6">
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1.5">Full Name *</label>
+<input class="w-full bg-slate-50 hover:bg-slate-100/70 border border-slate-200 rounded-xl px-4 py-3 xl:py-3.5 text-sm xl:text-base text-slate-800 placeholder-slate-400 focus:bg-white focus:ring-2 focus:ring-[#0072ce] focus:border-[#0072ce] focus:outline-none transition-all duration-200" placeholder="e.g. Sarah Jenkins" required="" type="text">
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1.5">Phone Number *</label>
+<input class="w-full bg-slate-50 hover:bg-slate-100/70 border border-slate-200 rounded-xl px-4 py-3 xl:py-3.5 text-sm xl:text-base text-slate-800 placeholder-slate-400 focus:bg-white focus:ring-2 focus:ring-[#0072ce] focus:border-[#0072ce] focus:outline-none transition-all duration-200" placeholder="(832) 555-0199" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 xl:gap-6">
+<div class="sm:col-span-2">
+<label class="block text-xs font-bold text-slate-700 mb-1.5">Street Address &amp; City *</label>
+<input class="w-full bg-slate-50 hover:bg-slate-100/70 border border-slate-200 rounded-xl px-4 py-3 xl:py-3.5 text-sm xl:text-base text-slate-800 placeholder-slate-400 focus:bg-white focus:ring-2 focus:ring-[#0072ce] focus:border-[#0072ce] focus:outline-none transition-all duration-200" placeholder="e.g. 1420 Memorial Drive, Houston" required="" type="text">
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1.5">ZIP Code *</label>
+<input class="w-full bg-slate-50 hover:bg-slate-100/70 border border-slate-200 rounded-xl px-4 py-3 xl:py-3.5 text-sm xl:text-base text-slate-800 placeholder-slate-400 focus:bg-white focus:ring-2 focus:ring-[#0072ce] focus:border-[#0072ce] focus:outline-none transition-all duration-200" placeholder="77079" required="" type="text">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 xl:gap-6">
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1.5">Service Type *</label>
+<select class="w-full bg-slate-50 hover:bg-slate-100/70 border border-slate-200 rounded-xl px-4 py-3 xl:py-3.5 text-sm xl:text-base text-slate-800 focus:bg-white focus:ring-2 focus:ring-[#0072ce] focus:border-[#0072ce] focus:outline-none transition-all duration-200 cursor-pointer" required="">
+<option value="">Select Service Required</option>
+<option>Active Leak / Burst Pipe Emergency</option>
+<option>Hydro-Jetting &amp; Drain Clearing</option>
+<option>Tankless / Tank Water Heater</option>
+<option>Sewer Camera Diagnostics</option>
+<option>Water Softener &amp; Filtration</option>
+<option>General Plumbing &amp; Fixture Repair</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1.5">Timeframe Window</label>
+<select class="w-full bg-slate-50 hover:bg-slate-100/70 border border-slate-200 rounded-xl px-4 py-3 xl:py-3.5 text-sm xl:text-base text-slate-800 focus:bg-white focus:ring-2 focus:ring-[#0072ce] focus:border-[#0072ce] focus:outline-none transition-all duration-200 cursor-pointer">
+<option>Emergency Dispatch (Under 45 min)</option>
+<option>Today - Morning Window</option>
+<option>Today - Afternoon Window</option>
+<option>Tomorrow</option>
+<option>Schedule Later This Week</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1.5">Notes or Symptoms</label>
+<textarea class="w-full bg-slate-50 hover:bg-slate-100/70 border border-slate-200 rounded-xl p-4 text-sm xl:text-base text-slate-800 placeholder-slate-400 focus:bg-white focus:ring-2 focus:ring-[#0072ce] focus:border-[#0072ce] focus:outline-none transition-all duration-200" placeholder="Briefly describe the leak location, backup symptoms, or fixture details..." rows="3"></textarea>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+<button class="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#78be20] hover:bg-[#68a818] text-white font-bold text-sm xl:text-base px-8 xl:px-10 py-4 xl:py-4.5 rounded-2xl shadow-lg shadow-[#78be20]/25 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-[#78be20]/35 active:scale-[0.98]" type="submit">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Confirm Priority Dispatch</span>
+</button>
+<span class="text-xs text-slate-400 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-slate-400 text-[16px]">lock</span>
+Encrypted direct dispatch. Zero spam.
+</span>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- CONTEMPORARY FOOTER -->
+<footer class="w-full bg-white border-t border-slate-200/80 pt-16 pb-12">
+<div class="reveal-init max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-10">
+<div class="site-footer-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 xl:gap-12 mb-12">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<img alt="bluefrog plumbing logo" class="h-8 w-auto object-contain" src="images/logo.png">
+</div>
+<p class="text-xs xl:text-sm text-slate-500 leading-relaxed mb-4">
+Spotless precision and luxury plumbing solutions across West Houston, Katy, Sugar Land, and Memorial.
+</p>
+<div class="text-xs font-bold text-[#78be20] flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#78be20] animate-pulse-soft"></span>
+<span>Master Plumber TX MPL #17531</span>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-extrabold uppercase tracking-widest text-slate-900 mb-4">Primary Services</h4>
+<ul class="space-y-2 text-xs xl:text-sm text-slate-600 font-medium">
+<li><a class="hover:text-[#0072ce] hover:translate-x-1 inline-block transition-all duration-200" href="#services">Emergency Drain Dispatch</a></li>
+<li><a class="hover:text-[#0072ce] hover:translate-x-1 inline-block transition-all duration-200" href="#services">Tankless Water Heating</a></li>
+<li><a class="hover:text-[#0072ce] hover:translate-x-1 inline-block transition-all duration-200" href="#services">Hydro-Jetting &amp; Descaling</a></li>
+<li><a class="hover:text-[#0072ce] hover:translate-x-1 inline-block transition-all duration-200" href="#services">Sewer Camera Diagnostics</a></li>
+<li><a class="hover:text-[#0072ce] hover:translate-x-1 inline-block transition-all duration-200" href="#services">Whole-Home Water Filtration</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-extrabold uppercase tracking-widest text-slate-900 mb-4">West Houston Hubs</h4>
+<ul class="space-y-2 text-xs xl:text-sm text-slate-600 font-medium">
+<li class="hover:text-slate-900 transition-colors">Katy &amp; Cinco Ranch</li>
+<li class="hover:text-slate-900 transition-colors">Memorial &amp; Energy Corridor</li>
+<li class="hover:text-slate-900 transition-colors">Sugar Land &amp; Richmond</li>
+<li class="hover:text-slate-900 transition-colors">Spring Branch West</li>
+<li class="hover:text-slate-900 transition-colors">Fulshear &amp; Cross Creek</li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-extrabold uppercase tracking-widest text-slate-900 mb-4">Direct Contact</h4>
+<div class="text-xl xl:text-2xl font-extrabold text-[#0b1c30] tracking-tight mb-1">(832) 650-3706</div>
+<p class="text-xs text-slate-500 mb-1">24/7/365 On-Call Dispatch</p>
+<p class="text-xs text-slate-400">10645 Richmond Ave., Houston, TX 77042</p>
+</div>
+</div>
+<div class="site-footer-bottom pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+<div>© 2025 bluefrog Plumbing + Drain of West Houston. All rights reserved. TX MPL #17531.</div>
+<div class="flex items-center gap-6">
+<a class="hover:text-slate-600 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-slate-600 transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-slate-600 transition-colors" href="#">Warranty Standard</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Modern Animation & Interaction Controller Script -->
+<script>
+  (function() {
+    // 1. Mobile Menu Drawer Toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+      document.addEventListener('click', function(e) {
+        if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth >= 1024) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    }
+
+    // 2. High-Performance Scroll Reveal Engine via IntersectionObserver
+    const revealElements = document.querySelectorAll('.reveal-init, .reveal-scale');
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+      revealElements.forEach(function(el) {
+        revealObserver.observe(el);
+      });
+    } else {
+      // Fallback for browsers without IntersectionObserver
+      revealElements.forEach(function(el) { el.classList.add('revealed'); });
+    }
+
+    // 3. Smooth Numeric Count-Up Animation for Stat Metrics
+    const counterElements = document.querySelectorAll('.stat-counter');
+    if ('IntersectionObserver' in window && counterElements.length > 0) {
+      const counterObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.getAttribute('data-target'), 10);
+            const suffix = el.getAttribute('data-suffix') || '';
+            const duration = 1800; // ms
+            const startTime = performance.now();
+
+            function easeOutCubic(t) {
+              return 1 - Math.pow(1 - t, 3);
+            }
+
+            function updateCounter(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              const easedProgress = easeOutCubic(progress);
+              const currentValue = Math.floor(easedProgress * target);
+
+              el.textContent = currentValue + suffix;
+
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                el.textContent = target + suffix;
+              }
+            }
+
+            requestAnimationFrame(updateCounter);
+            observer.unobserve(el);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      counterElements.forEach(function(el) {
+        counterObserver.observe(el);
+      });
+    }
+
+    // 4. Dynamic Floating Header Scroll Shadow Elevation
+    const floatingHeader = document.getElementById('floating-header');
+    if (floatingHeader) {
+      let ticking = false;
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            if (window.scrollY > 40) {
+              floatingHeader.classList.add('header-scrolled');
+            } else {
+              floatingHeader.classList.remove('header-scrolled');
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    }
+
+    // 5. Scroll progress indicator and subtle parallax motion
+    const scrollProgressBar = document.querySelector('.scroll-progress-bar');
+    const parallaxElements = document.querySelectorAll('.tilt-card, .hover-card-lift');
+
+    function updateScrollProgress() {
+      if (!scrollProgressBar) return;
+      const totalScrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = totalScrollable > 0 ? (window.scrollY / totalScrollable) * 100 : 0;
+      scrollProgressBar.style.width = Math.min(Math.max(progress, 0), 100) + '%';
+    }
+
+    window.addEventListener('scroll', function() {
+      updateScrollProgress();
+    }, { passive: true });
+    updateScrollProgress();
+
+    parallaxElements.forEach(function(card) {
+      card.addEventListener('pointermove', function(event) {
+        const rect = card.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width;
+        const y = (event.clientY - rect.top) / rect.height;
+        const rotateY = (x - 0.5) * 12;
+        const rotateX = (0.5 - y) * 12;
+
+        card.style.transform = 'perspective(1200px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-4px)';
+      });
+
+      card.addEventListener('pointerleave', function() {
+        card.style.transform = '';
+      });
+    });
+
+    // 6. Scroll-Spy Navigation Active Highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-item');
+    if (sections.length > 0 && navItems.length > 0) {
+      window.addEventListener('scroll', function() {
+        let currentSection = '';
+        const scrollPosition = window.scrollY + 200;
+
+        sections.forEach(function(section) {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+
+        navItems.forEach(function(nav) {
+          nav.classList.remove('nav-item-active');
+          if (nav.getAttribute('href') === '#' + currentSection) {
+            nav.classList.add('nav-item-active');
+          }
+        });
+      }, { passive: true });
+    }
+  })();
+</script>
+
+</body></html>
